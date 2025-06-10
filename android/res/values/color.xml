@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="ic_background_color">#F5A623FF</color>
+    <color name="background">#FFFFFFFF</color>
+    <color name="holo_blue_dark">#FF0099CC</color>
+    <color name="deep_pink">#FF1493</color>
+</resources>

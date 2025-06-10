@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>VR Heart</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+
+        iframe {
+            width: 100vw;
+            height: 100vh;
+            border: none;
+        }
+
+        #toggleButton {
+            background-color: #6A0DAD;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 13px;
+            cursor: pointer;
+            border-radius: 5px;
+            position: absolute;
+            top: 1px;
+            left: 1px;
+            z-index: 2;
+        }
+
+        #toggleButton:focus {
+            outline: none;
+        }
+
+        #optionsBox {
+            display: none;
+            position: absolute;
+            top: 60px;
+            left: 20px;
+            background-color: white;
+            border: 1px solid #007bff;
+            border-radius: 5px;
+            padding: 10px;
+            z-index: 1;
+            width: 120px;
+        }
+
+        #optionsBox button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px;
+            font-size: 20px;
+            cursor: pointer;
+            margin: 5px 0;
+            border-radius: 5px;
+            width: 100%;
+        }
+
+        #optionsBox button:focus {
+            outline: none;
+        }
+
+        #bottomButtons {
+            display: flex;
+            position: absolute;
+            bottom: 15px;
+            left: 15px;
+            z-index: 2;
+        }
+
+        #prevButton, #nextButton {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 19px;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-right: 10px;
+            transition: background-color 0.3s ease;
+        }
+
+        #prevButton:focus, #nextButton:focus {
+            outline: none;
+        }
+
+        #prevButton:hover, #nextButton:hover {
+            background-color: #45a049;
+        }
+
+    </style>
+</head>
+<body>
+
+<button id="toggleButton">Select Topic</button>
+<div id="optionsBox">
+    <button id="modelA">L_S of a Flower</button>
+    <button id="modelB">stamen</button>
+    <button id="modelC">Cross Section Anatomy</button>
+</div>
+
+<iframe
+        id="sketchfabIframe"
+        title="Realistic Human Heart"
+        allowfullscreen
+        allow="autoplay; fullscreen; xr-spatial-tracking; camera; gyroscope"
+        src="https://sketchfab.com/models/9620274fba1c4c5f8ac74764eec5bf83/embed"
+        frameborder="0"
+        style="position: absolute; top: 0; left: 0;">
+</iframe>
+
+<div id="bottomButtons">
+    <button id="prevButton"><--</button>
+    <button id="nextButton">--></button>
+</div>
+
+<script>
+    const modelUrls = [
+        "https://sketchfab.com/models/9620274fba1c4c5f8ac74764eec5bf83/embed",
+        "https://sketchfab.com/models/f20cd84a047347689eaa787bbbf1627f/embed",
+        "https://sketchfab.com/models/1418510c191841d5b78eb925bd675592/embed"
+    ];
+
+    let currentModelIndex = 0;
+    let optionsVisible = false;
+
+    const toggleButton = document.getElementById('toggleButton');
+    const optionsBox = document.getElementById('optionsBox');
+    const iframe = document.getElementById('sketchfabIframe');
+    const modelAButton = document.getElementById('modelA');
+    const modelBButton = document.getElementById('modelB');
+    const modelCButton = document.getElementById('modelC');
+    const prevButton = document.getElementById('prevButton');
+    const nextButton = document.getElementById('nextButton');
+
+    toggleButton.addEventListener('click', () => {
+        optionsVisible = !optionsVisible;
+        optionsBox.style.display = optionsVisible ? 'block' : 'none';
+    });
+
+    modelAButton.addEventListener('click', () => {
+        currentModelIndex = 0;
+        loadModel();
+        hideOptions();
+    });
+
+    modelBButton.addEventListener('click', () => {
+        currentModelIndex = 1;
+        loadModel();
+        hideOptions();
+    });
+
+    modelCButton.addEventListener('click', () => {
+        currentModelIndex = 2;
+        loadModel();
+        hideOptions();
+    });
+
+    prevButton.addEventListener('click', () => {
+        currentModelIndex = (currentModelIndex - 1 + modelUrls.length) % modelUrls.length;
+        loadModel();
+    });
+
+    nextButton.addEventListener('click', () => {
+        currentModelIndex = (currentModelIndex + 1) % modelUrls.length;
+        loadModel();
+    });
+
+    iframe.addEventListener('dblclick', () => {
+        resetOptions();
+    });
+
+    function loadModel() {
+        iframe.src = modelUrls[currentModelIndex];
+    }
+
+    function hideOptions() {
+        optionsBox.style.display = 'none';
+    }
+
+    function resetOptions() {
+        optionsVisible = false;
+        optionsBox.style.display = 'none';
+        toggleButton.style.display = 'block';
+    }
+
+    toggleButton.addEventListener('dblclick', () => {
+        resetOptions();
+    });
+</script>
+
+</body>
+</html>
