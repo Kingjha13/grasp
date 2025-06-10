@@ -51,5 +51,45 @@
             android:name="io.github.graspit.android.Chapter11"
             android:label="Select Subject"
             android:exported="false" />
+        <activity
+            android:name="io.github.graspit.android.Chapter10"
+            android:label="Select Subject"
+            android:exported="false" />
+        <activity
+            android:name="io.github.graspit.android.Subject10"
+            android:label="Select Subject"
+            android:exported="false" />
+        <activity
+            android:name="io.github.graspit.android.Chapter9"
+            android:label="Select Subject"
+            android:exported="false" />
+        <activity
+            android:name="io.github.graspit.android.Subject9"
+            android:label="Select Subject"
+            android:exported="false" />
+        <activity
+            android:name="io.github.graspit.android.Chapter8"
+            android:label="Select Subject"
+            android:exported="false" />
+        <activity
+            android:name="io.github.graspit.android.Subject8"
+            android:label="Select Subject"
+            android:exported="false" />
+        <activity
+            android:name="io.github.graspit.android.Chapter7"
+            android:label="Select Subject"
+            android:exported="false" />
+        <activity
+            android:name="io.github.graspit.android.Subject7"
+            android:label="Select Subject"
+            android:exported="false" />
+        <activity
+            android:name="io.github.graspit.android.Chapter6"
+            android:label="Select Subject"
+            android:exported="false" />
+        <activity
+            android:name="io.github.graspit.android.Subject6"
+            android:label="Select Subject"
+            android:exported="false" />
   </application>
 </manifest>

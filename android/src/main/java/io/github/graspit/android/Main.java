@@ -130,34 +130,45 @@ public class Main extends Activity {
                 });
                 break;
 
-            case "Class 6":
-                startActivity(new Intent(this, Subject11.class));
-                break;
 
+//            case "Class 7":
+//                FrameLayout frameLayout = new FrameLayout(this);
+//                woGlb = new WoGlb(this);
+//                frameLayout.addView(woGlb);
+//                woGlb.loadModel("index.html");
+//
+//                ImageButton modelBackButton = new ImageButton(this);
+//                modelBackButton.setImageResource(android.R.drawable.ic_media_previous);
+//                modelBackButton.setBackgroundColor(Color.TRANSPARENT);
+//                FrameLayout.LayoutParams backParams = new FrameLayout.LayoutParams(
+//                    dpToPx(60), dpToPx(60)
+//                );
+//                backParams.setMargins(dpToPx(16), dpToPx(16), 0, 0);
+//                modelBackButton.setLayoutParams(backParams);
+//                modelBackButton.setOnClickListener(v -> {
+//                    recreate();
+//                });
+//
+//                frameLayout.addView(modelBackButton);
+//                setContentView(frameLayout);
+//                break;
+            case "Class 8":
+                startActivity(new Intent(this, Subject8.class).putExtra("class_name", className));
+                break;
             case "Class 7":
-                FrameLayout frameLayout = new FrameLayout(this);
-                woGlb = new WoGlb(this);
-                frameLayout.addView(woGlb);
-                woGlb.loadModel("index.html");
-
-                ImageButton modelBackButton = new ImageButton(this);
-                modelBackButton.setImageResource(android.R.drawable.ic_media_previous);
-                modelBackButton.setBackgroundColor(Color.TRANSPARENT);
-                FrameLayout.LayoutParams backParams = new FrameLayout.LayoutParams(
-                    dpToPx(60), dpToPx(60)
-                );
-                backParams.setMargins(dpToPx(16), dpToPx(16), 0, 0);
-                modelBackButton.setLayoutParams(backParams);
-                modelBackButton.setOnClickListener(v -> {
-                    recreate();
-                });
-
-                frameLayout.addView(modelBackButton);
-                setContentView(frameLayout);
+                startActivity(new Intent(this, Subject7.class).putExtra("class_name", className));
                 break;
-
+            case "Class 6":
+                startActivity(new Intent(this, Subject6.class).putExtra("class_name", className));
+                break;
             case "Class 11":
                 startActivity(new Intent(this, Subject11.class).putExtra("class_name", className));
+                break;
+            case "Class 9":
+                startActivity(new Intent(this, Subject9.class).putExtra("class_name", className));
+                break;
+            case "Class 10":
+                startActivity(new Intent(this, Subject10.class).putExtra("class_name", className));
                 break;
 
             case "Class 12":
