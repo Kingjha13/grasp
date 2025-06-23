@@ -76,7 +76,6 @@ public class Chapter8 extends Activity {
             Map.entry("Stars and The Solar System", "s8q"),
             Map.entry("Pollution of Air and Water", "s8r")
         );
-
         public SimpleChapterAdapter(Context context, List<String> chapters) {
             this.context = context;
             this.chapters = chapters;

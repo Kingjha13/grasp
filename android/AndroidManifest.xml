@@ -91,5 +91,17 @@
             android:name="io.github.graspit.android.Subject6"
             android:label="Select Subject"
             android:exported="false" />
+        <activity
+            android:name="io.github.graspit.android.WebViewActivity"
+            android:label="Select Subject"
+            android:exported="false" />
+        <activity
+            android:name="io.github.graspit.android.SubjectActivity"
+            android:label="Select Subject"
+            android:exported="false" />
+        <activity
+            android:name="io.github.graspit.android.ChapterActivity"
+            android:label="Select Subject"
+            android:exported="false" />
   </application>
 </manifest>
