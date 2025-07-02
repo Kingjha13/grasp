@@ -1,10 +1,14 @@
 package io.github.graspit;
 
 public interface AndroidLauncherAware {
+
     void showWoGlb();
     void openWebView(String unit);
     void openMain();
     void open12();
+
+    void openar();
+
     void open11();
 
     void open6();

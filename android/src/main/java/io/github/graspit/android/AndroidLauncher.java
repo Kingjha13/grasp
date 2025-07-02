@@ -28,6 +28,7 @@ import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.backends.android.AndroidApplication;
 import com.badlogic.gdx.backends.android.AndroidApplicationConfiguration;
 
+import io.github.graspit.Abc;
 import io.github.graspit.AndroidLauncherAware;
 import io.github.graspit.AnotherScreen;
 import io.github.graspit.HelloWorldApp;
@@ -65,9 +66,13 @@ public class AndroidLauncher extends AndroidApplication implements AndroidLaunch
             String screen = intent.getStringExtra("open_screen");
             if ("another".equals(screen)) {
                 Gdx.app.postRunnable(() -> libGdxGame.setScreen(new AnotherScreen(this)));
-            } else if ("hello".equals(screen)) {
+            } else if ("hell".equals(screen)) {
                 Gdx.app.postRunnable(() -> libGdxGame.setScreen(new HelloWorldApp()));
             }
+            else if ("form".equals(screen)){
+                Gdx.app.postRunnable(() -> libGdxGame.setScreen(new Abc(this)));
+            }
+
             intent.removeExtra("open_screen");
         }
     }
@@ -85,7 +90,7 @@ public class AndroidLauncher extends AndroidApplication implements AndroidLaunch
     @Override
     public void openMain() {
         runOnUiThread(() -> {
-            Intent intent = new Intent(this, Subject7.class);
+            Intent intent = new Intent(this, Main.class);
             startActivity(intent);
         });
     }
@@ -94,6 +99,13 @@ public class AndroidLauncher extends AndroidApplication implements AndroidLaunch
     public void open12() {
         runOnUiThread(() -> {
             Intent intent = new Intent(this, Subject12.class);
+            startActivity(intent);
+        });
+    }
+    @Override
+    public void openar() {
+        runOnUiThread(() -> {
+            Intent intent = new Intent(this, WebARActivity.class);
             startActivity(intent);
         });
     }

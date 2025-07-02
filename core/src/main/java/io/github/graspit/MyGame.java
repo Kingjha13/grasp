@@ -19,6 +19,7 @@
 package io.github.graspit;
 
 import com.badlogic.gdx.Game;
+import com.badlogic.gdx.scenes.scene2d.ui.Skin;
 
 public class MyGame extends Game {
     public static String START_SCREEN = null;
@@ -32,10 +33,15 @@ public class MyGame extends Game {
     public void create() {
         if ("another".equals(START_SCREEN)) {
             setScreen(new AnotherScreen(launcher));
-        } else {
+        }
+        else if ("form".equals(START_SCREEN)){
+            setScreen(new AnotherScreen(launcher));
+        }
+        else if ("abc".equals(START_SCREEN)) {
+            setScreen(new Abc(launcher));
+        }
+        else {
             setScreen(new HelloWorldApp());
         }
     }
 }
-
-//for testing

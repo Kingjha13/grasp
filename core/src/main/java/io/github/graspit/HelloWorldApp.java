@@ -127,11 +127,8 @@ import com.badlogic.gdx.scenes.scene2d.utils.ClickListener;
 import com.badlogic.gdx.utils.viewport.ScreenViewport;
 
 public class HelloWorldApp implements Screen {
-
     private Stage stage;
     private Skin skin;
-
-    // Constructor (must NOT have void)
     public HelloWorldApp() {
         stage = new Stage(new ScreenViewport());
         Gdx.input.setInputProcessor(stage);
@@ -157,7 +154,7 @@ public class HelloWorldApp implements Screen {
             @Override
             public void clicked(InputEvent event, float x, float y) {
                 if (Gdx.app instanceof AndroidLauncherAware) {
-                    ((AndroidLauncherAware) Gdx.app).open11();
+                    ((AndroidLauncherAware) Gdx.app).openar();
                 }
             }
         });
@@ -177,7 +174,6 @@ public class HelloWorldApp implements Screen {
 
     @Override
     public void show() {
-        // Called when this screen becomes current
     }
 
     @Override
@@ -196,17 +192,14 @@ public class HelloWorldApp implements Screen {
 
     @Override
     public void pause() {
-        // Optional
     }
 
     @Override
     public void resume() {
-        // Optional
     }
 
     @Override
     public void hide() {
-        // Called when screen is no longer visible
     }
 
     @Override

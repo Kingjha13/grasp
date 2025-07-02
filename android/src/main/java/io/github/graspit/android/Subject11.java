@@ -17,6 +17,8 @@ public class Subject11 extends Activity {
         Button biologyButton = findViewById(R.id.biology_button);
         Button chemistryButton = findViewById(R.id.chemistry_button);
         Button physicsButton = findViewById(R.id.physics_button);
+        Button backButton = findViewById(R.id.back_button);
+
 
         biologyButton.setOnClickListener(v -> {
             Intent intent = new Intent(this, Chapter11.class);
@@ -34,6 +36,13 @@ public class Subject11 extends Activity {
             Intent intent = new Intent(this, Chapter11.class);
             intent.putExtra("subject", "Physics");
             startActivity(intent);
+        });
+        backButton.setOnClickListener(v -> {
+            Intent intent = new Intent(this, AndroidLauncher.class);
+            intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_SINGLE_TOP);
+            intent.putExtra("open_screen", "form");
+            startActivity(intent);
+            finish();
         });
     }
 }
