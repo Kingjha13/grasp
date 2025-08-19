@@ -11,6 +11,8 @@ public interface AndroidLauncherAware {
 
     void open11();
 
+    void ar11();
+
     void open6();
 
     void open7();

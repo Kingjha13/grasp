@@ -118,6 +118,14 @@ public class AndroidLauncher extends AndroidApplication implements AndroidLaunch
         });
     }
     @Override
+    public void ar11() {
+        runOnUiThread(() -> {
+            Intent intent = new Intent(this, ArS11.class);
+            startActivity(intent);
+        });
+    }
+
+    @Override
     public void open6() {
         runOnUiThread(() -> ChapterActivity.start(AndroidLauncher.this, 6));
     }
