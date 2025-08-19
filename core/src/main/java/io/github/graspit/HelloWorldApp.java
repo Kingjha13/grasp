@@ -154,7 +154,7 @@ public class HelloWorldApp implements Screen {
             @Override
             public void clicked(InputEvent event, float x, float y) {
                 if (Gdx.app instanceof AndroidLauncherAware) {
-                    ((AndroidLauncherAware) Gdx.app).openar();
+                    ((AndroidLauncherAware) Gdx.app).openMain();
                 }
             }
         });

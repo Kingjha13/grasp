@@ -120,5 +120,13 @@
             android:name="io.github.graspit.android.ArS11"
             android:label="Select Subject"
             android:exported="false" />
+        <activity
+            android:name="io.github.graspit.android.Main3D"
+            android:label="Select Subject"
+            android:exported="false" />
+        <activity
+            android:name="io.github.graspit.android.ArMain"
+            android:label="Select Subject"
+            android:exported="false" />
   </application>
 </manifest>

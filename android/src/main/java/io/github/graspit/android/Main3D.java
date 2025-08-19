@@ -1,22 +1,25 @@
 package io.github.graspit.android;
 
-
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Gravity;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.LinearLayout;
 
+import com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView;
 
 import io.github.graspit.R;
 
-public class Main extends Activity {
+public class Main3D extends Activity {
+
     private WoGlb woGlb;
 
     String[] classNames = {
-        "AR", "3D"
+        "Tutorials", "Class 6", "Class 7", "Class 8", "Class 9", "Class 10", "Class 11", "Class 12"
     };
+
     int[] boxBackgrounds = {
         R.drawable.border_pink, R.drawable.bc1, R.drawable.bc2,
         R.drawable.bc1, R.drawable.bc2, R.drawable.border_pink, R.drawable.bc2, R.drawable.bc1
@@ -76,17 +79,41 @@ public class Main extends Activity {
     }
 
     private void handleClassSelection(String className) {
-        switch (className) {
-            case "AR":
-                startActivity(new Intent(this, ArMain.class).putExtra("class_name", className));
-                break;
-            case "3D":
-                startActivity(new Intent(this, Main3D.class).putExtra("class_name", className));
-                break;
-            default:
-                startActivity(new Intent(this, Main3D.class).putExtra("class_name", className));
-                break;
+        if ("Tutorials".equals(className)) {
+            setContentView(R.layout.you);
+            YouTubePlayerView youTubePlayerView = findViewById(R.id.youtube_player_view);
+            String youtubeUrl = "https://youtu.be/URUJD5NEXC8?si=YUPTXe_a9fQ-x5rz";
+            YouTubePlayerHelper.loadVideo(this, youTubePlayerView, youtubeUrl);
+
+            ImageButton fullscreenButton = findViewById(R.id.fullscreen_button);
+            fullscreenButton.setOnClickListener(v -> toggleFullScreen());
+
+            ImageButton backBtn = findViewById(R.id.back_button);
+            backBtn.setOnClickListener(v -> recreate());
+            return;
         }
+
+        if (className.startsWith("Class")) {
+            int classNumber = Integer.parseInt(className.replaceAll("[^0-9]", ""));
+
+            switch (classNumber) {
+                case 11:
+                    startActivity(new Intent(this, Subject11.class).putExtra("class_name", className));
+                    break;
+                case 12:
+                    startActivity(new Intent(this, Subject12.class).putExtra("class_name", className));
+                    break;
+                default:
+                    Intent intent = new Intent(this, SubjectActivity.class);
+                    intent.putExtra(SubjectActivity.EXTRA_CLASS_NUMBER, classNumber);
+                    startActivity(intent);
+                    break;
+            }
+        }
+    }
+
+    private void toggleFullScreen() {
+        // TODO: Implement full screen logic if needed
     }
 
     private int dpToPx(int dp) {

@@ -1,21 +1,22 @@
 package io.github.graspit.android;
 
-
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Gravity;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.LinearLayout;
 
+import com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView;
 
 import io.github.graspit.R;
 
-public class Main extends Activity {
+public class ArMain extends Activity {
     private WoGlb woGlb;
 
     String[] classNames = {
-        "AR", "3D"
+        "Tutorials", "Class 11"
     };
     int[] boxBackgrounds = {
         R.drawable.border_pink, R.drawable.bc1, R.drawable.bc2,
@@ -77,16 +78,31 @@ public class Main extends Activity {
 
     private void handleClassSelection(String className) {
         switch (className) {
-            case "AR":
-                startActivity(new Intent(this, ArMain.class).putExtra("class_name", className));
+            case "Tutorials":
+                setContentView(R.layout.you);
+                YouTubePlayerView youTubePlayerView = findViewById(R.id.youtube_player_view);
+                String youtubeUrl = "https://youtu.be/URUJD5NEXC8?si=YUPTXe_a9fQ-x5rz";
+                YouTubePlayerHelper.loadVideo(this, youTubePlayerView, youtubeUrl);
+
+                ImageButton fullscreenButton = findViewById(R.id.fullscreen_button);
+                fullscreenButton.setOnClickListener(v -> toggleFullScreen());
+
+                ImageButton backBtn = findViewById(R.id.back_button);
+                backBtn.setOnClickListener(v -> {
+                    recreate();
+                });
                 break;
-            case "3D":
-                startActivity(new Intent(this, Main3D.class).putExtra("class_name", className));
+            case "Class 11":
+                startActivity(new Intent(this, ArS11.class).putExtra("class_name", className));
                 break;
+
             default:
-                startActivity(new Intent(this, Main3D.class).putExtra("class_name", className));
+                startActivity(new Intent(this, Chapter.class).putExtra("class_name", className));
                 break;
         }
+    }
+
+    private void toggleFullScreen() {
     }
 
     private int dpToPx(int dp) {
