@@ -304,13 +304,13 @@
 <script>
     function getUnitParam() {
         const params = new URLSearchParams(window.location.search);
-        return params.get("unit")?.toLowerCase() || "unit1";
+        return params.get("unit")?.toLowerCase() || "unique";
     }
 
     const currentUnit = getUnitParam();
 
     const units = {
-        unit1: {
+        unique: {
             models: [
                 "https://avnishjha.8thwall.app/elephant/",
                 "https://avnishjha.8thwall.app/rhino/",
@@ -544,15 +544,319 @@
     ]
     },
 <!--    yaha se chemistry ke liye-->
+unit1: {
+            models: [
+                "https://sketchfab.com/models/9620274fba1c4c5f8ac74764eec5bf83/embed",
+                "https://sketchfab.com/models/f20cd84a047347689eaa787bbbf1627f/embed",
+                "https://sketchfab.com/models/1418510c191841d5b78eb925bd675592/embed",
+                "https://sketchfab.com/models/4ce0afd091d742e286a0de156e183d95/embed"
+            ],
+            labels: ["L_S of a Flower", "Stamen", "Cross Section Anatomy","Hibiscus Anatomy"]
+        },
+        unit2: {
+    models: [
+        "https://sketchfab.com/models/b77f14ee1cf743ffbac365b045598c48/embed",
+        "https://sketchfab.com/models/e1ffa3b2e2414582b23db449c6b98ca5/embed",
+        "https://sketchfab.com/models/445e5d3977d848419253a4058137555f/embed",
+        "https://sketchfab.com/models/8565b034185c4f9988026c93b65a6f8a/embed",
+        "https://sketchfab.com/models/725520fe8a0b4c74bfed69b0c4d31da3/embed",
+        "https://sketchfab.com/models/2af4a301518a47c4b298f1872ec76fcc/embed",
+        "https://sketchfab.com/models/267dc672834749b5b332d23ee013a00a/embed",
+        "https://sketchfab.com/models/4cf07df443874ff5989dd262f18c96e7/embed",
+        "https://sketchfab.com/models/825158260a7b4f118fdf46393fe4b835/embed",
+        "https://sketchfab.com/models/abc9dd5fe8794a81b680819e52feeb8e/embed",
+        "https://sketchfab.com/models/2986eff7614a4d13903461c3d0ae420b/embed",
+        "https://sketchfab.com/models/cfe0c7c1caf04183af8a29d0e82149c1/embed",
+        "https://sketchfab.com/models/aeb509d93c7b4ac3be79da423ca6f706/embed"
+    ],
+    labels: [
+        "Male Reproductive System",
+        "Seminiferous Tubule",
+        "Female Reproductive System",
+        "Female Pelvic Floor Muscles",
+        "Mammary Gland",
+        "Testis Cut Section",
+        "Sperm Cell",
+        "Ovary Cross Section",
+        "Sperm (Spermatozoa)",
+        "Oogenesis",
+        "Human Sperm and Ovum",
+        "Fallopian Tube and Ovary",
+        "Uterus and Ovaries"
+    ]
+},
+        unit3: {
+            models: [
+                "https://sketchfab.com/models/3f8072336ce94d18b3d0d055a1ece089/embed",
+                "https://sketchfab.com/models/3f8072336ce94d18b3d0d055a1ece089/embed",
+            ],
+            labels: ["Digestive System", "Nephron"]
+        },
+        unit4: {
+        models: [
+        "https://sketchfab.com/models/782c72ae75934a6d8b437c81feee0855/embed",
+        "https://sketchfab.com/models/55ce94f8c43e45c9ad0bcfc4b05cf64f/embed",
+        "https://sketchfab.com/models/b4a95a86f35d48fd9a5020372d44539f/embed",
+        "https://sketchfab.com/models/cc33bb1ebe6141b08d0d06f1bbebc2b7/embed",
+        "https://sketchfab.com/models/4d837b982bda4e31abf96d59d8eb525b/embed",
+        "https://sketchfab.com/models/88485a6904174035bdaf18359a13324d/embed",
+        "https://sketchfab.com/models/657f7b34ab2e43878c4f366e3e940ebd/embed",
+        "https://sketchfab.com/models/c90c988fb9fd4e88ad786acc62efab11/embed",
+        "https://sketchfab.com/models/70169635dec246a6af4db09f2abf68f6/embed"
+    ],
+    labels: [
+        "Pea Plant",
+        "Test Cross Section",
+        "Snapdragon",
+        "Chromosome Structure",
+        "Male Drosophila",
+        "Female Drosophila",
+        "Red Blood Cells",
+        "Amino Acid",
+        "Hemoglobin Molecular Structure"
+    ]
+    },
+    unit5: {
+    models: [
+        "https://sketchfab.com/models/547d42f6c0184232a945051b6952a39e/embed",
+        "https://sketchfab.com/models/51f5ab2ffc364f60be00289eb6909535/embed",
+        "https://sketchfab.com/models/a908bbcd3eb04372b83b352e71b55836/embed",
+        "https://sketchfab.com/models/6c40cfc0445542b08aebbf4b4944d0dc/embed",
+        "https://sketchfab.com/models/3122da8323374eb5bf9ed4736c0de563/embed",
+        "https://sketchfab.com/models/42439edc90cd4d87b8ae322a4dcee8de/embed",
+        "https://sketchfab.com/models/fcebb753c6c34ac48454df5279805aa8/embed",
+        "https://sketchfab.com/models/8d7833756c3d402f8572db722c735e3f/embed",
+        "https://sketchfab.com/models/b2052daba15f49edab6aa3242efbb1cc/embed"
+    ],
+    labels: [
+        "DNA",
+        "Stylized DNA",
+        "DNA Double Helix",
+        "Nucleosome Core",
+        "DNA Replication",
+        "Bacterial Cell Structure",
+        "Bacterial Transcription",
+        "Regulation in Prokaryotes and Eukaryotes",
+        "Structure of tRNA"
+    ]
+    },
+    unit6: {
+    models: [
+        "https://sketchfab.com/models/b53575623123456a9883b7dbb02b112d/embed",
+        "https://sketchfab.com/models/909bf645de1746829ab19acd1ae31767/embed",
+        "https://sketchfab.com/models/497a7f22e77a4678b173fb511bea6064/embed",
+        "https://sketchfab.com/models/7d7683df41d1405283f160e81a5dff1b/embed",
+        "https://sketchfab.com/models/e984538c95b64aa28dedc380bcf5a904/embed",
+        "https://sketchfab.com/models/cbec5591c584438392824d13fbef401b/embed",
+        "https://sketchfab.com/models/2161e27e91c64dfc876f2c7fe5a6b4b7/embed",
+        "https://sketchfab.com/models/eace18f0d7a649e5a17728c3b557a4dd/embed",
+        "https://sketchfab.com/models/797d27b68af3453e865149435df6aa30/embed",
+        "https://sketchfab.com/models/2141a7e4b6514d2ea9e2afeae391cae4/embed",
+        "https://sketchfab.com/models/f07ce40364504d96a64726befc535a15/embed",
+        "https://sketchfab.com/models/6187c608908245f0b1755d7214eb57ce/embed",
+        "https://sketchfab.com/models/baf6ac7b781a46218dca2b59dee58817/embed"
+    ],
+    labels: [
+        "Hyperendocrin Giganotosaurus",
+        "Triceratops",
+        "Tyrannosaurus Rex",
+        "Pteranodon",
+        "Brachychampsa",
+        "Archaeopteryx",
+        "Moth",
+        "Butterfly",
+        "Pigeon",
+        "Kangaroo",
+        "Wallaby",
+        "Tasmanian Devil",
+        "Human Skull"
+    ]
+    },
+    unit7: {
+    models: [
+        "https://sketchfab.com/models/d721801f75e64112a1d1a86bd5d44076/embed",
+        "https://sketchfab.com/models/1560a647337c4bd7b58e0e23fcce9cac/embed",
+        "https://sketchfab.com/models/cc6896de8309441aabcefecb2d3f9b50/embed",
+        "https://sketchfab.com/models/ef90409b50694cdba500f0806d363f98/embed",
+        "https://sketchfab.com/models/bb7efa04144b46dabec6cf2c34393cad/embed",
+        "https://sketchfab.com/models/ea31a5768c06457ea2fd67c3eb3458b8/embed",
+        "https://sketchfab.com/models/9c317ed7fa4741aeb160ab8f3765420c/embed"
+    ],
+    labels: [
+        "Plasmodium",
+        "Antibody",
+        "Lymph Node",
+        "Poppy Seed Pod",
+        "THC Molecule",
+        "Cannabis Sativa",
+        "Datura"
+    ]
+    },
+    unit8: {
+    models: [
+        "https://sketchfab.com/models/60b19d96fcaa473eb05f4ac1d50bf904/embed",
+        "https://sketchfab.com/models/150bb189896f4b8196c88ca728832133/embed",
+        "https://sketchfab.com/models/fe27559cd78e402d860039161fd1229d/embed",
+        "https://sketchfab.com/models/5fd3b104d8104519b061469c365d4974/embed",
+        "https://sketchfab.com/models/bc48ff5c23f64c728f5ea978e533009d/embed",
+        "https://sketchfab.com/models/8d2edddda3104aab8108dffa1bbab6b2/embed",
+        "https://sketchfab.com/models/25d4b7e3392444ce9fdadb2e22b4f7e9/embed"
+    ],
+    labels: [
+        "Jersey Cattle",
+        "Foghorn Leghorn",
+        "Mule",
+        "Corn Plant",
+        "Corn",
+        "Wheat",
+        "Peas"
+    ]
+    },
+    unit9: {
+    models: [
+        "https://sketchfab.com/models/2ac949aba46c4adfa722be0c99281d66/embed",
+        "https://sketchfab.com/models/b2329c65c63f402d98425a3c958f0aaf/embed",
+        "https://sketchfab.com/models/1603e3a49c334be2ab377f6494b458d0/embed",
+        "https://sketchfab.com/models/bd3fc6f7c10a4c25971013c7bbc6cdff/embed",
+        "https://sketchfab.com/models/1c577fabbd494d49959fc634db72e5c1/embed",
+        "https://sketchfab.com/models/7d92b777c634497e9f9c061b89f309b3/embed",
+        "https://sketchfab.com/models/16dd9044825e4f408b8a868a4ff99a88/embed",
+        "https://sketchfab.com/models/ecd23ff01937450596dd6dafd85fb33b/embed",
+        "https://sketchfab.com/models/d1362b18c2eb43c38e3d9e3ba9e79de4/embed"
+    ],
+    labels: [
+        "Shapes of Bacteria",
+        "HIV",
+        "Rabies Virus",
+        "Petri Dish",
+        "Petri Dish Set",
+        "Fermentation Vessel",
+        "Beer Fermenter",
+        "Water Treatment Plant",
+        "Biogas Production"
+    ]
+    },
+    unit10: {
+    models: [
+        "https://sketchfab.com/models/8fff8583fbc24dcb99dd92bc540c3d9f/embed",
+        "https://sketchfab.com/models/7feaa81541784098927fb219aeca3c28/embed",
+        "https://sketchfab.com/models/b0632ca6104d4dd2839412f46c747e6b/embed"
+    ],
+    labels: [
+        "PCR Instrument",
+        "Stirred Bio Reactor",
+        "Media Tank"
+    ]
+    },
+    unit11: {
+    models: [
+        "https://sketchfab.com/models/7c154628ba114da78aea046c4f404aeb/embed",
+        "https://sketchfab.com/models/ab72ac8a4c584a8baa35b6dc90bc361f/embed"
+    ],
+    labels: [
+        "Cotton Ball",
+        "Internal Root Structure"
+    ]
+    },
+    s10a: {
+    models: [
+        "https://sketchfab.com/models/7c154628ba114da78aea046c4f404aeb/embed",
+        "https://sketchfab.com/models/ab72ac8a4c584a8baa35b6dc90bc361f/embed"
+    ],
+    labels: [
+        "Cotton Ball",
+        "Internal Root Structure"
+    ]
+    },
+    unit12: {
+    models: [
+        "https://sketchfab.com/models/a43160c7f121424fa9c5597af7aa77d4/embed",
+        "https://sketchfab.com/models/0aa3a1f542484229868005785a2340de/embed",
+        "https://sketchfab.com/models/7e25d1acc5a645eca5e1035a3273537c/embed",
+        "https://sketchfab.com/models/220c14d161e44e83be64f30f2034cf4b/embed",
+        "https://sketchfab.com/models/16b9af1ae2ce484ebed1ef324752ed9e/embed",
+        "https://sketchfab.com/models/33f18d4f772a4c26ae0badba7578201e/embed",
+        "https://sketchfab.com/models/d257c269ba4e401e89f8ebd0d3984b1e/embed",
+        "https://sketchfab.com/models/813d7c6befe0443b9cb7d0681d546f6c/embed",
+        "https://sketchfab.com/models/75d19624c0d04b65975e011a04ae77a0/embed"
+    ],
+    labels: [
+        "Weather and Climate",
+        "Tropical Rainforest",
+        "Deciduous Forest",
+        "Desert Landscape",
+        "Low Poly Beach",
+        "Population Pyramid",
+        "Fig Tree",
+        "Fig Fruit Pack",
+        "Orchid Flower"
+    ]
+    },
+    unit13: {
+    models: [
+        "https://sketchfab.com/models/b48530cca28b4284bae6d65b4d72fe81/embed",
+        "https://sketchfab.com/models/7f9c7aa38c4c4716a0281a89dd53c840/embed"
+    ],
+    labels: [
+        "Volcanic Bomb",
+        "Aragonite Mineral"
+    ]
+    },
+    unit14: {
+    models: [
+        "https://sketchfab.com/models/676c9072c978459992ff48c3e23c4799/embed"
+    ],
+    labels: [
+        "Ctenomys"
+    ]
+    },
+    unit15: {
+    models: [
+        "https://sketchfab.com/models/d24411683b6b463abb49a8e8a8dc2932/embed",
+        "https://sketchfab.com/models/8547cf2ab26d46f5988130badec651c9/embed",
+        "https://sketchfab.com/models/60d115a957a540e187ffdeb31a796b8f/embed",
+        "https://sketchfab.com/models/4de530d825d94d84b1f4c0c66ed2a012/embed",
+        "https://sketchfab.com/models/7b5209406d1741d0b1962774a9b48264/embed",
+        "https://sketchfab.com/models/195a23b32a8a4f2dafdf88fdc6abb7d5/embed"
+    ],
+    labels: [
+        "Waste Water Treatment Plant",
+        "Cambrian Algae",
+        "DDT Molecule",
+        "Structure of the Sun",
+        "Cozy Greenhouse",
+        "Ozone Layer"
+    ]
+    },
 
+<!--        Yaha se chemistry ke liye h-->
+
+        C12unit1: {
+            models: [
+                "https://sketchfab.com/models/3f8072336ce94d18b3d0d055a1ece089/embed",
+                "https://sketchfab.com/models/3f8072336ce94d18b3d0d055a1ece089/embed",
+            ],
+            labels: ["Digestive System", "Nephron"]
+        },
+
+<!--        yaha se physics ke liye-->
+
+        p12unit1: {
+            models: [
+                "https://sketchfab.com/models/3f8072336ce94d18b3d0d055a1ece089/embed",
+                "https://sketchfab.com/models/3f8072336ce94d18b3d0d055a1ece089/embed",
+            ],
+            labels: ["Pysics1", "physics2"]
+        },
     c11a: {
     models: [
         "https://pqwmtnzm.8thwall.app/atom/",
         "https://avnishjha.8thwall.app/htwoo/",
-        "https://avnishjha.8thwall.app/thermometer/"
+        "https://avnishjha.8thwall.app/thermometer/",
+        "https://sketchfab.com/models/388ba61d071040aabbfd477c686b0897/embed"
     ],
     labels: [
-        "Atom", "H2O Molecule",   "thermometer"
+        "Atom", "H2O Molecule",   "thermometer","test"
     ]
     },
     c11b: {
@@ -858,10 +1162,1327 @@
         "Spherical Harmonic",
         "Longitudinal Waves"
     ]
-    }
+    },
+<!--    for class 6-->
+s6a:{
+  models: [
+    "https://sketchfab.com/models/3a68fc7d37344f48b17adc428b27a2f6/embed",
+    "https://sketchfab.com/models/a03baeed12ee4dc5a02b4fc02f4ee940/embed",
+    "https://sketchfab.com/models/f9a871a696c541eaa38e9f763ba10379/embed",
+    "https://sketchfab.com/models/7a9204ef5a194ed3a5df58228269c965/embed",
+    "https://sketchfab.com/models/f341f05f976e420eb8a75122049bc439/embed"
+  ],
+  labels: [
+    "Grilled Fish",
+    "Dal Bhat",
+    "Parts of a Plant",
+    "Hive Seamless",
+    "Low Poly Squirrel"
+  ]
+},
+
+s6b: {
+  models: [
+    "https://sketchfab.com/models/81b1c7b59b2643ad82ceb4d128278bbf/embed",
+    "https://sketchfab.com/models/ce7879c700a24c20925f4224a37249cc/embed",
+    "https://sketchfab.com/models/7d3c9772cfc64f2289629b5421f39513/embed",
+    "https://sketchfab.com/models/a4bcec57ab8d4650b439c31dacdae16d/embed",
+    "https://sketchfab.com/models/39cf0803e980485e86a733569dd1f6b0/embed",
+    "https://sketchfab.com/models/d35f802fb0a14458bf2c2c2307f1fc1c/embed",
+    "https://sketchfab.com/models/b17731fa548f4837a9e4e69afb82347d/embed",
+    "https://sketchfab.com/models/a934743308f7471a878ac14992b31ac5/embed",
+    "https://sketchfab.com/models/2d4298db08bc4e088932bc087adaea0e/embed",
+    "https://sketchfab.com/models/f0d388a79168477b94d512ea8b0feefb/embed"
+  ],
+  labels: [
+    "Starch",
+    "Protein Shake",
+    "Carbohydrates",
+    "Food Containing Fat",
+    "Vitamin B1",
+    "Vitamin D",
+    "Sphalerite",
+    "Iodine",
+    "Phosphorus",
+    "Calcium Carbide"
+  ]
+},
+
+s6c:{
+  models: [
+    "https://sketchfab.com/models/507070cebf784389bfe8a47a99dbd0ca/embed",
+    "https://sketchfab.com/models/acb729b09cff48b6af1afe46d9774a79/embed",
+    "https://sketchfab.com/models/f5227ef53b214215af2962afd4159afb/embed",
+    "https://sketchfab.com/models/94475b545633405b9dc15b3b85928929/embed",
+    "https://sketchfab.com/models/91191da74305402c8527c58368c6508a/embed",
+    "https://sketchfab.com/models/82c2b2f3eae54d0a9ba38c56074fd81a/embed",
+    "https://sketchfab.com/models/e314982d3a35407e8f97f4e0fde4a44d/embed"
+  ],
+  labels: [
+    "Clothing Store",
+    "Sewing Threads",
+    "Cotton Plantation",
+    "Cotton",
+    "Jute Carpet",
+    "Knitting Yarn Basket",
+    "Charkha"
+  ]
+},
+
+s6d: {
+  models: [
+    "https://sketchfab.com/models/142376f5d19b4a668e463225732deb75/embed",
+    "https://sketchfab.com/models/65d64c1837064d08bc839fed563484bc/embed"
+  ],
+  labels: [
+    "Floating Water",
+    "Transparent Plastic Bottle"
+  ]
+},
+
+s6e:{
+  models: [
+    "https://sketchfab.com/models/36a6fd36cc274aa087c6dd68359eaaed/embed",
+    "https://sketchfab.com/models/e7d7dff562a94014997d2855beb44cff/embed",
+    "https://sketchfab.com/models/9eecae3341c54dbe90224fe213bcec9d/embed",
+    "https://sketchfab.com/models/720cdbe7c0314e16b7a5111d34f18c41/embed",
+    "https://sketchfab.com/models/b9f3107c30a44e20aa524b019c0ba889/embed",
+    "https://sketchfab.com/models/db490c50871a4ccb927fdc3bf6c4e040/embed",
+    "https://sketchfab.com/models/75678894df9f41c0aaa2a4f1b9e9364a/embed",
+    "https://sketchfab.com/models/b0108691a7c74e459800b15f96a66e18/embed",
+    "https://sketchfab.com/models/246f79155c424e4ba22c9ae50532a81d/embed"
+  ],
+  labels: [
+    "Tea Strainer",
+    "Butter Churn",
+    "Rice Thresher Machine",
+    "Winnow Machine",
+    "River Stone",
+    "Sieve",
+    "Water Bath",
+    "Sea Salt & Sage",
+    "Salt Dissolving in Water"
+  ]
+},
+
+s6f:{
+  models: [
+    "https://sketchfab.com/models/0967ab4a9c654a569a13ea1f8d9dca0c/embed",
+    "https://sketchfab.com/models/7aecee021b9f464bbc5ac80d7d8308a4/embed",
+    "https://sketchfab.com/models/522bf736cae646a998522d666430a5a1/embed",
+    "https://sketchfab.com/models/32ccec88e9a84a09bc922c767a42a8b6/embed"
+  ],
+  labels: [
+    "Paper Airplane",
+    "Chapati",
+    "Wagon Wheel",
+    "Melting Candle"
+  ]
+},
+
+s6g:{
+  models: [
+    "https://sketchfab.com/models/499d164285364120a177bdf54909531e/embed",
+    "https://sketchfab.com/models/f9a871a696c541eaa38e9f763ba10379/embed",
+    "https://sketchfab.com/models/45f37a6cb42546d49664774e79ce1100/embed",
+    "https://sketchfab.com/models/f1005205b134402db0a1c986b15c803d/embed",
+    "https://sketchfab.com/models/20f8ab42fb8543d785427e01c0f64212/embed",
+    "https://sketchfab.com/models/251311f7ba0c4f63ab508c8d58333d1d/embed",
+    "https://sketchfab.com/models/e71bfcf145c742cdbbde168d0f9736b8/embed",
+    "https://sketchfab.com/models/9c263eef98064b7c85d716ad02947cda/embed",
+    "https://sketchfab.com/models/c294d45510664ae790fba5767d03d9d2/embed",
+    "https://sketchfab.com/models/061f08c1f27249bead2ed074865f1da4/embed",
+    "https://sketchfab.com/models/7c168fc6dba74813a57a3eb3542a7f55/embed",
+    "https://sketchfab.com/models/cf31779b755c41bf97d1e95567e27a2f/embed",
+    "https://sketchfab.com/models/f20cd84a047347689eaa787bbbf1627f/embed",
+    "https://sketchfab.com/models/0e4fd0a29ad3435c919a55d7129af46a/embed",
+    "https://sketchfab.com/models/4ce0afd091d742e286a0de156e183d95/embed",
+    "https://sketchfab.com/models/0851d9723f41445facb72c2e3fa5601a/embed"
+  ],
+  labels: [
+    "Forest Trail",
+    "Parts of a Plant",
+    "Plantas",
+    "Green Creeper Plant",
+    "Glass Vase With Flowers",
+    "Thimbleberry Leaf",
+    "Leaf Cross Section",
+    "Watering Can",
+    "Root Structure",
+    "Taproot",
+    "Stem",
+    "Flower Buds",
+    "Stamen",
+    "Bellflower Flower",
+    "Parts of a Flower",
+    "Anatomy of A Flower"
+  ]
+},
+
+s6h:{
+  models: [
+    "https://sketchfab.com/models/8ff5805a31cc4ad3888abab14ec6c14a/embed",
+    "https://sketchfab.com/models/3e8dd2f05e124fa5bb1c9f57fba429bc/embed",
+    "https://sketchfab.com/models/9bd1999c628b4411abc85de32ed52583/embed",
+    "https://sketchfab.com/models/0a2d68c6ec1f4ca783336c96f3c0a5fd/embed",
+    "https://sketchfab.com/models/9dcb6ca051f34e03a5938cb36a9fb98d/embed",
+    "https://sketchfab.com/models/657a31ed9704423c8c4e752fb2506a74/embed",
+    "https://sketchfab.com/models/97a8f17c8b44438e9769e68329a5a11a/embed",
+    "https://sketchfab.com/models/0f1aa77bf02e4d438f8630bd6c53b12e/embed",
+    "https://sketchfab.com/models/94489e01f40548b5a0b4f0a6477c36a7/embed",
+    "https://sketchfab.com/models/bcd9eee09ce044ef98a69c315aa792e2/embed",
+    "https://sketchfab.com/models/53240ae515b644d989f0330a9280e5ac/embed",
+    "https://sketchfab.com/models/baf6ac7b781a46218dca2b59dee58817/embed",
+    "https://sketchfab.com/models/4f5438fc9337454587ec4a2c30c8c42f/embed",
+    "https://sketchfab.com/models/81eddf9161ac42979c19247c75fe6a83/embed",
+    "https://sketchfab.com/models/cddaa3513be14ad89918cbfde5b34a83/embed",
+    "https://sketchfab.com/models/7c26fbd1de9443cf89b6f9f02ddcf015/embed",
+    "https://sketchfab.com/models/ca89c4eb16fd48b791f002a9eb73972d/embed",
+    "https://sketchfab.com/models/83a46c7261ef471194f0a268c5b5aafc/embed",
+    "https://sketchfab.com/models/657a6aeb04a64a90b9a2f3089d25422e/embed",
+    "https://sketchfab.com/models/88d57c4b19fc480f9787c18f2f3731a3/embed"
+  ],
+  labels: [
+    "Ball and Socket Joint", "Ball and Socket Joint 2", "Pivot Joint", "Knee Anatomy",
+    "Hinge Joint", "Human Skeleton", "Hand Bones", "Human Rib Cage", "Shoulder Joint",
+    "Human Spinal", "Pelvis", "Human Skull", "Ear Cross Section", "Earthworm",
+    "Tapestry Turban", "Cockroach", "Bird Skeleton Ibis", "Fish", "Fish Swimming", "Snacks"
+  ]
+},
+
+s6i:{
+  models: [
+    "https://sketchfab.com/models/5b83601e5042436d8ff626a39e01a9c9/embed",
+    "https://sketchfab.com/models/3f116a7e0c464f2798fe25c7dae4fabb/embed",
+    "https://sketchfab.com/models/b914384f931d4b3585bd4f0bf48f0da3/embed",
+    "https://sketchfab.com/models/af9170c40d414857ad49906068cb4ce3/embed",
+    "https://sketchfab.com/models/77b8fe4eb2ad4c0188264a74d4b1e8ed/embed",
+    "https://sketchfab.com/models/f12dabd148314a826315c72d5796ae/embed",
+    "https://sketchfab.com/models/10bc0e8fcb85464395469fdddfaffce1/embed",
+    "https://sketchfab.com/models/76039b75cdc0492a80680c2404725496/embed",
+    "ttps://sketchfab.com/models/cbfdea9941d0484aa6ec5c97684dc9b6/embed",
+    "https://sketchfab.com/models/b5f4d30c19654ec6b70ae8972cb60a91/embed"
+  ],
+  labels: [
+    "Walking Camel", "Desert Shrubs", "Mountain Trees", "Snow Leopard", "Domestic Yak",
+    "Mountain Goat", "Lion", "Deer", "Chicken", "Process Of Photosynthesis"
+  ]
+},
+
+s6j:{
+  models: [
+    "https://sketchfab.com/models/dcf15f34876e4a90bd0ad67ef55fb9fe/embed",
+    "https://sketchfab.com/3d-models/table-dimensions-7895333068b841cc8c2c2f4bd18b3400/embed"
+  ],
+  labels: [
+    "Walking Ant", "Table Dimensions"
+  ]
+},
+s6k :{
+  models: [
+    "https://sketchfab.com/models/4e52395c57a64e3f9b2197a5e68c7a5c/embed",
+    "https://sketchfab.com/models/790a5f26f4ea46398b0fae37694c17ca/embed",
+    "https://sketchfab.com/models/a4c5c0fa0a744aa98f77617efdf8327b/embed",
+    "https://sketchfab.com/models/8f3a8a2168ed4a47ac8328e24e88147b/embed"
+  ],
+  labels: [
+    "Shadow Man", "Hide and seek shadow", "Pinhole Camera", "Reflection/Refraction Prism"
+  ]
+},
+
+s6l:{
+  models: [
+    "https://sketchfab.com/models/2febf3d8948e47b29d0a3606f5137bd5/embed",
+    "https://sketchfab.com/models/c3da1783a5204f3f80d5d4476464a73b/embed",
+    "https://sketchfab.com/models/58879ee181194929a074ea548b41df2c/embed",
+    "https://sketchfab.com/models/09550b21accc492ea4e6cb237cf69795/embed",
+    "https://sketchfab.com/models/9accb2c5dedd423f96877493767c2309/embed",
+    "https://sketchfab.com/models/45a83dd09a844e54badf746a1e0f7a1b/embed",
+    "https://sketchfab.com/models/32d02fa06d474f4db5a433aa134be612/embed",
+    "https://sketchfab.com/models/b4896e62c68b44c7942586f38883e6bb/embed",
+    "https://sketchfab.com/models/f69396e924c14b368e45fe7035e7e0ef/embed"
+  ],
+  labels: [
+    "Power Cell", "Batteries", "Oil Lamp", "Galvanic Cell", "Electric Circuit",
+    "Electric Switch", "Simple Light Switch", "Rotary Switch", "Olympic games Torch"
+  ]
+},
+
+s6m:{
+  models: [
+    "https://sketchfab.com/models/62a2fe42b6a748e38966c9169a1aefd3/embed",
+    "https://sketchfab.com/models/ede3a36d164649f5b053df5a8801609d/embed",
+    "https://sketchfab.com/models/06b61ca4c4d14ea5bd71250345f43597/embed",
+    "https://sketchfab.com/models/14a2073018104b6baf2f19d1b35babec/embed",
+    "ttps://sketchfab.com/models/212cb6108de7461493f0023601864355/embed",
+    "ttps://sketchfab.com/models/dfaf413f0ce845a3b798b0bb4079962a/embed",
+    "ttps://sketchfab.com/models/d6764405fb174b4b82063a56ffd3d63d/embed",
+    "ttps://sketchfab.com/models/cdd32ea3d698442db9bc1a6ba6cff26a/embed"
+  ],
+  labels: [
+    "Scrapyard", "Magnet", "Terrain Hill", "MAGNEMITE", "Magnetic fields",
+    "Stone Chariot in Hampi", "Alnico rectangular", "Compass"
+  ]
+},
+
+s6n:{
+  models: [
+    "https://sketchfab.com/models/57a4890ecadf483bb6d94b009cb4b7dd/embed",
+    "https://sketchfab.com/models/ccd9af8480e64da2b5646f5e9b2c9bce/embed",
+    "https://sketchfab.com/models/495a14904c6c4e0e9812bd5f5d74e53c/embed",
+    "https://sketchfab.com/models/a1177381d3464f75b10cb8f462f0b9a5/embed",
+    "https://sketchfab.com/models/35da9d322cbe406bb6f7faf38307a20c2/embed",
+    "https://sketchfab.com/models/20fcb5c256ea453389e2640145d3d240/embed",
+    "https://sketchfab.com/models/02e6bb4187324e32bbb641ff14748f57/embed",
+    "ttps://sketchfab.com/models/ed9087a7b0eb462782e8fc6e6ef3061d/embed"
+  ],
+  labels: [
+    "Animated Water Surface", "Clothes Line", "Phase Transition Evaporation",
+    "After the Rain", "Water Cycle", "The Flood", "Rain Water Collector", "Rain Water"
+  ]
+},
+
+s6o:{
+  models: [
+    "https://sketchfab.com/models/02ec0b7680524dc088060696e7d0c15b/embed",
+    "https://sketchfab.com/models/90d4bead93af4c69897d39688164d567/embed",
+    "https://sketchfab.com/models/e7419671f8124cab870d7a1a4d68b180/embed",
+    "https://sketchfab.com/models/b549fd81fdae40948cfb4c36df8c230e/embed",
+    "https://sketchfab.com/models/83bbff61fcd84cf99eac02dfabc06d36/embed",
+    "https://sketchfab.com/models/991a599996b24444b0c783a681b4a9e2/embed"
+  ],
+  labels: [
+    "Weather vane", "Lab/medicine bottle", "Oxygen Cylinder", "Oxygen Tank", "Layers Of Soil", "Windmill"
+  ]
+},
+
+s6p:{
+  models: [
+    "https://sketchfab.com/models/54ff7bdaac044e449e5eb87d4b2eb8e1/embed",
+    "https://sketchfab.com/models/0ebf2ea025d049a6beafe1dd00999ba9/embed",
+    "https://sketchfab.com/models/9baea423e33c430ebcc577f7a8f29107/embed",
+    "https://sketchfab.com/models/bc82949d0eb54edcbb40a6a55a0bf0fa/embed"
+  ],
+  labels: [
+    "Abandoned landfill", "Pongaroa Landfill", "Redworms", "Pile of Metal Scrap"
+  ]
+},
+
+
+
+<!--for class 7-->
+
+s7z:{
+  models:[
+    "https://sketchfab.com/models/60ef7d2515b0403986ff9e8b7f234a66/embed",
+    "https://sketchfab.com/models/ddc40bb0900544959f02d3ff83c32615/embed",
+    "https://sketchfab.com/models/251311f7ba0c4f63ab508c8d58333d1d/embed",
+    "https://sketchfab.com/models/e71bfcf145c742cdbbde168d0f9736b8/embed",
+    "https://sketchfab.com/models/00ffda2fc813426a9852abe6350332ca/embed",
+    "https://sketchfab.com/models/0b84e2b4ba38460799700a826ca44196/embed",
+    "https://sketchfab.com/models/27dc43f90c5f463d91a762e4d1d099e5/embed"
+  ],
+  labels:[
+    "Human Cell",
+    "Animal Cell",
+    "Leaf",
+    "Leaf Cross Section",
+    "Stoma",
+    "Pitcher Plant",
+    "Mushroom Pack"
+  ]
+},
+s7b:{
+  models:[
+    "https://sketchfab.com/models/f7f207a187b74cdbad8499bf6b1326a1/embed",
+    "https://sketchfab.com/models/2d3771dd6b8940ffa2312bd97aca6fc3/embed",
+    "https://sketchfab.com/models/69040283853044c093d1f09b9ac07619/embed",
+    "https://sketchfab.com/models/fc075ab8202f41178b91d15eeb5955b4/embed",
+    "https://sketchfab.com/models/834e2dc8725d486f9f875a552d67ddd7/embed",
+    "https://sketchfab.com/models/89fe35a64ffa463e8906636bc8b55d39/embed",
+    "https://sketchfab.com/models/171a16a37c4347799e4838853fd84ffe/embed"
+  ],
+  labels:[
+    "Starfish",
+    "Digestive System",
+    "Types of Human Teeth",
+    "Starch Hydrolysis",
+    "Tongue",
+    "Ruminant Stomach",
+    "Amoeba"
+  ]
+},
+s7c:{
+  models:[
+    "https://sketchfab.com/models/f9349a33222d466688700cd36a43d688/embed",
+    "https://sketchfab.com/models/15692d6248564a19bf2514ce2344ce70/embed",
+    "https://sketchfab.com/models/77b8fe4eb2ad4c0188264a74d4b1e8ed/embed",
+    "https://sketchfab.com/models/4431e22e592c4cf1a126c11c3771a811/embed",
+    "https://sketchfab.com/models/7fcff9613a554e7f8c8389fd27a0f93f/embed",
+    "https://sketchfab.com/models/54013900cdb448c2a2997bc0964febca/embed",
+    "https://sketchfab.com/models/c52ff0ca72cb4ffe88077428bdcbe02a/embed",
+    "https://sketchfab.com/models/53779830dccb4640bcac93f61025a184/embed",
+    "https://sketchfab.com/models/aa87960257d743bcab7c8f01c0ab80c6/embed",
+    "https://sketchfab.com/models/716e8d052bec4f3891ab445872d4f7fa/embed",
+    "https://sketchfab.com/models/85579a0cd7b14c0ba121b1264d664e03/embed"
+  ],
+  labels:[
+    "Sheep",
+    "Goat",
+    "Domestic Yak",
+    "Camel",
+    "Llama",
+    "Alpaca",
+    "Sheep Shears",
+    "Mulberry",
+    "Silkworm",
+    "Cocoon",
+    "Silk Moth"
+  ]
+},
+s7d:{
+  models:[
+    "https://sketchfab.com/models/88be582ad6a94fc5a65e735e89b41c49/embed",
+    "https://sketchfab.com/models/459fca114b03489bacee518595a13f4a/embed",
+    "https://sketchfab.com/models/dbd9a38fffc0494e8b17bca2d81ef2e9/embed",
+    "https://sketchfab.com/models/624b676076d04249a364d7651657ce18/embed",
+    "https://sketchfab.com/models/54eebd83d55f4178bbc2086fdf6f3da4/embed"
+  ],
+  labels:[
+    "Water Container",
+    "Clinical Thermometer",
+    "Water Temperature Sensor",
+    "Phase Diagram of Water",
+    "Sea Breeze"
+  ]
+},
+s7e:{
+  models:[
+    "https://sketchfab.com/models/9a24360d2edb4d9c858c0c0baf75bbbb/embed",
+    "https://sketchfab.com/models/52e2bd68c04c433db1e5cd1bf0d36973/embed",
+    "https://sketchfab.com/models/eaee5c918ab74563867f445569eb65bc/embed",
+    "https://sketchfab.com/models/b6f4b254599b4eef9216d2b4fb6d1883/embed"
+  ],
+  labels:[
+    "Lichens",
+    "Litmus Paper",
+    "Chinese Rose",
+    "Neutralization"
+  ]
+},
+s7f:{
+  models:[
+    "https://sketchfab.com/models/457624d2526744d8890d50d811ef45d7/embed",
+    "https://sketchfab.com/models/c04d941a7ff344dd8ddec9a76b772c7e/embed",
+    "https://sketchfab.com/models/f40ccd2312cd4cce93ea8637a0a67fd7/embed",
+    "https://sketchfab.com/models/891ad685cd854ac48c85f763b9cdf1e9/embed",
+    "https://sketchfab.com/models/6e14b8875a834e489a4a7c0ed0ae79ef/embed",
+    "https://sketchfab.com/models/14a873793a844c02a89f271aa5b6b367/embed"
+  ],
+  labels:[
+    "Paper Debris",
+    "Rusty Steel",
+    "Magnesium Oxide Molecule",
+    "Copper Sulphate Crystal",
+    "Crystal",
+    "Iron Column"
+  ]
+},
+s7g:{
+  models:[
+    "https://sketchfab.com/models/a43160c7f121424fa9c5597af7aa77d4/embed",
+    "https://sketchfab.com/models/041528124c0c43a680f89431c6d1301f/embed",
+    "https://sketchfab.com/models/deeb7f4add9f4c36abaacdb73ce3e553/embed",
+    "https://sketchfab.com/models/adb0e767a0824a469d4a854d27e9458b/embed",
+    "https://sketchfab.com/models/00e0817aed884278bf43b9ec5e1ae4ad/embed",
+    "https://sketchfab.com/models/a29489bf51a64a419eace337b1293910/embed",
+    "https://sketchfab.com/models/70c740b6a79d4b758b5d372ac89981c4/embed",
+    "https://sketchfab.com/models/1460b2dc152a4943ba2ac055f9f2b264/embed"
+  ],
+  labels:[
+    "Weather & Climate",
+    "Emperor Penguin",
+    "Polar Bear",
+    "Penguin",
+    "Red-eyed Tree Frog",
+    "Keel‑Billed Toucan",
+    "Macaque Monkey",
+    "Indian Elephant"
+  ]
+},
+s7h:{
+  models:[
+    "https://sketchfab.com/models/4df88821e352410c8864df32f18f9931/embed",
+    "https://sketchfab.com/models/6ae5a620ba5d48519883f821730e00e1/embed",
+    "https://sketchfab.com/models/77d95c70624a4ed8b35a06ba63175427/embed",
+    "https://sketchfab.com/models/6b3beadb184949eb87bea43de4cd45ad/embed"
+  ],
+  labels:[
+    "Water Cooler",
+    "Pirate‑Ship Hot‑Air Balloon",
+    "Water Balloon",
+    "Cyclone Model"
+  ]
+},
+s7i:{
+  models:[
+    "https://sketchfab.com/models/b512f1ce62774d8992cb62394095532a/embed",
+    "https://sketchfab.com/models/6146c7ff55584e24bf2b7b126bd26dd6/embed",
+    "https://sketchfab.com/models/83bbff61fcd84cf99eac02dfabc06d36/embed",
+    "https://sketchfab.com/models/17c9294887e14b42a0e278a5a854f5a0/embed",
+    "https://sketchfab.com/models/c29b9968f1a34a5fac992dd89878edd0/embed"
+  ],
+  labels:[
+    "Kids Playground",
+    "Soil Profile",
+    "Layers Of Soil",
+    "Pot & Soil",
+    "Making Pots"
+  ]
+},
+s7j:{
+  models:[
+    "https://sketchfab.com/models/250911151757489da1cf5501b791f363/embed",
+    "https://sketchfab.com/models/b32c41dffc274a57aeffd45bc4ffc75a/embed",
+    "https://sketchfab.com/models/b5f4d30c19654ec6b70ae8972cb60a91/embed",
+    "https://sketchfab.com/models/8458de63d0734776aa901615cf1f15ca/embed",
+    "https://sketchfab.com/models/04ab11e9bc3d4211912a38d89cd22665/embed",
+    "https://sketchfab.com/models/c294d45510664ae790fba5767d03d9d2/embed"
+  ],
+  labels:[
+    "Human Respiratory System",
+    "Respiratory System",
+    "Photosynthesis Process",
+    "Tracheal System",
+    "Parrotfish Gill",
+    "Root Structure"
+  ]
+},
+s7k:{
+  models:[
+    "https://sketchfab.com/models/c79bd04fadd642cdb4b0ffda9c3b4497/embed",
+    "https://sketchfab.com/models/e811abffe6974ce693105dadd36c8089/embed",
+    "https://sketchfab.com/models/e7abdabd3a6d422cb25e6e63b45b1ab0/embed",
+    "https://sketchfab.com/models/26adbbe9c3d34cb698b7f75d7bfb76a6/embed",
+    "https://sketchfab.com/models/2bb09c6144a84f3fa2c860a52f1cf473/embed",
+    "https://sketchfab.com/models/3bef1be839834f4f9ad7ff8731d90602/embed",
+    "https://sketchfab.com/models/d5d3b4e21c9040f8b004c2102913a5d2/embed",
+    "https://sketchfab.com/models/ab72ac8a4c584a8baa35b6dc90bc361f/embed",
+    "https://sketchfab.com/models/5ed6755b91dd46758ed46c7ecf2311b6/embed",
+    "https://sketchfab.com/models/00ffda2fc813426a9852abe6350332ca/embed"
+  ],
+  labels:[
+    "Circulatory System",
+    "Pulse Sensor",
+    "Circulatory System",
+    "Human Heart",
+    "Heart Rate Monitor",
+    "Stethoscope",
+    "Excretory System",
+    "Internal Root",
+    "Tree & Water",
+    "Plant Stomata Structure"
+  ]
+},
+s7l:{
+  models:[
+    "https://sketchfab.com/models/7aff3f1a1736416e8072ca82f4ffd01b/embed",
+    "https://sketchfab.com/models/2c4a6dec590146c2baa94ef1450f2b3d/embed",
+    "https://sketchfab.com/models/14d7deb215f84f6ea2c10a9da12e60fd/embed",
+    "https://sketchfab.com/models/a3035a1ee09b43c6b545b77a9720a333/embed",
+    "https://sketchfab.com/models/594ec5c63535441f870962017c1e48bd/embed",
+    "https://sketchfab.com/models/93d1f6a261e24b8394d0ea41cf985ef9/embed",
+    "https://sketchfab.com/models/f20cd84a047347689eaa787bbbf1627f/embed",
+    "https://sketchfab.com/models/92bb1ba8b5bf44d4bec2a852b976c5ff/embed",
+    "https://sketchfab.com/models/1a795b7bc4a14bf29733ee70fa97c9bd/embed",
+    "https://sketchfab.com/models/a3e40e1540ed41fc95a9d6278b06c06b/embed",
+    "https://sketchfab.com/models/73130ba497e64fa490beb20c51b544ff/embed",
+    "https://sketchfab.com/models/3bcbe06b08c444cc868d525d79d8ee4b/embed",
+    "https://sketchfab.com/models/359dc58c034c4e3bb1c52b9f434ff417/embed",
+    "https://sketchfab.com/models/0f15d318d5f8480ab87c490828249a54/embed",
+    "https://sketchfab.com/models/eed0588360284db1bcd4af720c258c10/embed",
+    "https://sketchfab.com/models/cba025c03d144ddd83dd04057d95b935/embed"
+  ],
+  labels:[
+    "Rose",
+    "Sprouted Potato",
+    "Ginger Root",
+    "Bryophyllum",
+    "Yeast",
+    "Fern Grass",
+    "Stamen",
+    "Ovary Stages",
+    "Pollination",
+    "Apple Stop‑Motion",
+    "Almond",
+    "Fertilization",
+    "Drumsticks",
+    "Mossy Maple",
+    "Sunflower",
+    "Seed"
+  ]
+},
+s7m:{
+  models:[
+    "https://sketchfab.com/models/9d91c6bd7fa94667946d2fa5e214fc8b/embed",
+    "https://sketchfab.com/models/2a268d4fdb67463b94ce805bc04431aa/embed",
+    "https://sketchfab.com/models/0466f2ba6a7a4899821c246a61ce32e3/embed",
+    "https://sketchfab.com/models/d7679322645d4861bab3009b03a34ede/embed",
+    "https://sketchfab.com/models/7d8f533e06934f0ba59b688ecc554514/embed",
+    "https://sketchfab.com/models/30f4e3e9903a48f498262464d4e7b0c5/embed",
+    "https://sketchfab.com/models/88c5c4e89928470a8f7e54bf1be13504/embed",
+    "https://sketchfab.com/models/20c4ca8c373c40e0ac8c0663a92f1234/embed",
+    "https://sketchfab.com/models/be2f59a574bb425397fade26b97a573c/embed",
+    "https://sketchfab.com/models/b9e8be03e3594330aef6dc3a8fa61d3f/embed"
+  ],
+  labels:[
+    "Vehicle Pack",
+    "Circular Turnings",
+    "Grandfather Clock",
+    "Table Clock",
+    "Simple Pendulum",
+    "Pendulum Animated",
+    "Jantar Mantar",
+    "Water Clock",
+    "Fast Ball",
+    "Car Dashboard"
+  ]
+},
+s7n:{
+  models:[
+    "https://sketchfab.com/models/de4f151a05494152b4c213ccafc4f646/embed",
+    "https://sketchfab.com/models/2febf3d8948e47b29d0a3606f5137bd5/embed",
+    "https://sketchfab.com/models/a7d27c2224d94c86a04083de8f9df7db/embed",
+    "https://sketchfab.com/models/b4896e62c68b44c7942586f38883e6bb/embed",
+    "https://sketchfab.com/models/b317158864144c24a1f8a23ab9e1979b/embed",
+    "https://sketchfab.com/models/5dcd884e27b642c8a7932a227d7c1b7a/embed",
+    "https://sketchfab.com/models/d3128656c3884705816ef7d533b3a441/embed",
+    "https://sketchfab.com/models/a33372e848a34841b3bc8b60000aaa2c/embed",
+    "https://sketchfab.com/models/9accb2c5dedd423f96877493767c2309/embed",
+    "https://sketchfab.com/models/dff2bd2fa475480595a14cee03c7a7fe/embed",
+    "https://sketchfab.com/models/d4b5c10ca71a43c4bc7a25c22f0c0495/embed",
+    "https://sketchfab.com/models/9b0fe8f086b342a78405a64c1540ad69/embed",
+    "https://sketchfab.com/models/217c6b059c584243893b36ab76472ddd/embed",
+    "https://sketchfab.com/models/c0a1a915abba44319f47c87aa9c1fa52/embed",
+    "https://sketchfab.com/models/d76031542bb84bbb8fcd2dc205d02b6f/embed",
+    "https://sketchfab.com/models/44f1fd116ae54c26baf0a82fbd36e554/embed",
+    "https://sketchfab.com/models/c55306284cae4a6281c796b516cbbd04/embed",
+    "https://sketchfab.com/models/7963fccf6e894a86a220066da10a7ad9/embed",
+    "https://sketchfab.com/models/9a4cac22d700492c8a65d49fd2c77694/embed",
+    "https://sketchfab.com/models/845d1715f6bd40d1b58d340f4d349b3a/embed"
+  ],
+  labels:[
+    "Hand Topology",
+    "Power Cell",
+    "Light Bulb",
+    "Rotary Switch",
+    "Switch On/Off",
+    "AA Battery",
+    "Wire Bundle",
+    "Battery L380P",
+    "Electric Circuit",
+    "Sci‑Fi Circuit",
+    "AIC Heating",
+    "Electric Iron",
+    "Incandescent Bulb",
+    "Tube Light",
+    "Fuse Box",
+    "Electrical Fuse",
+    "Circuit Breaker",
+    "Needle Compass",
+    "Electromagnet",
+    "Electric Bell"
+  ]
+},
+s7o:{
+  models:[
+    "https://sketchfab.com/models/011d350f9e0d4ce79248edab8c3e5d53/embed",
+    "https://sketchfab.com/models/0c58bdf80b5b4f1cb858dd12fad416c3/embed",
+    "https://sketchfab.com/models/6e65b010fe27471d8bcad7edb3b6a3d7/embed",
+    "https://sketchfab.com/models/c0040405824942138223b37fecbe263f/embed",
+    "https://sketchfab.com/models/a34ce45db54042bdbce9f9dda24f718c/embed",
+    "https://sketchfab.com/models/8f3a8a2168ed4a47ac8328e24e88147b/embed",
+    "https://sketchfab.com/models/b78313c16c9d46a7a67643245cf278d2/embed",
+    "https://sketchfab.com/models/64891f22bff0436791012ad5b636e41c/embed",
+    "https://sketchfab.com/models/63ffaf2f2a08422b8c9f909e51aaa675/embed",
+    "https://sketchfab.com/models/799837188c694f12818bc8e071051b17/embed",
+    "https://sketchfab.com/models/11e21525d9a24e24bad23c6aadc644d5/embed",
+    "https://sketchfab.com/models/364a7ec7668149a49d4dc4144b7b799f/embed"
+  ],
+  labels:[
+    "Railways Engine",
+    "Lighthouse",
+    "Candle Chandelier",
+    "Refraction/Reflection",
+    "Mirror Reflection",
+    "Prism",
+    "Ambulance",
+    "Stainless Spoon",
+    "Lens Rays",
+    "Convex Mirror",
+    "Concave Lens",
+    "Prism Colours"
+  ]
+},
+s7p:{
+  models:[
+    "https://sketchfab.com/models/c00259c4a9244fc69f8ecc3a0588b7cf/embed",
+    "https://sketchfab.com/models/bbf17bb125f440d5ab2c71af13e5e6eb/embed",
+    "https://sketchfab.com/models/eb83482f3a2a415eb73e4c73790fce21/embed",
+    "https://sketchfab.com/models/35da9d322cbe406bb6f7faf38307a20c2/embed",
+    "https://sketchfab.com/models/3f81f0289b3e44b5a83ac246b895ea5d/embed",
+    "https://sketchfab.com/models/8e883f39e2044409b8b701606944dd4b/embed"
+  ],
+  labels:[
+    "Collage Wall",
+    "Liquid Water Structure",
+    "Planet Earth",
+    "Water Cycle",
+    "Woman with Jug",
+    "Well"
+  ]
+},
+s7q:{
+  models:[
+    "https://sketchfab.com/models/6dc8c85121234cb59dbd53a673fa2b8f/embed",
+    "https://sketchfab.com/models/c48c6afb709c4e7dbedda8c88eef35a2/embed",
+    "https://sketchfab.com/models/26e54fa5c1d74edba61f5c5a97c95798/embed",
+    "https://sketchfab.com/models/584b2ca8c9d84aa5aaa40024ffb6ec30/embed",
+    "https://sketchfab.com/models/9843c14352434c8a9238a193f95ee7bf/embed",
+    "https://sketchfab.com/models/03edef8009d942d3a3db6fa64cecbe56/embed",
+    "https://sketchfab.com/models/268d586ab08147f78b18cdf582690d42/embed",
+    "https://sketchfab.com/models/0efc022837db43beb4c757155f004ec6/embed",
+    "https://sketchfab.com/models/793a75d1dabd42228a112454ec18aaac/embed",
+    "https://sketchfab.com/models/d485de05a19e424fbf31e3b6022daf0c/embed",
+    "https://sketchfab.com/models/e49f5bc7af5b41d499cef855bff56ea4/embed",
+    "https://sketchfab.com/models/643231a35e0b4de6aefd06b926cb9de/embed",
+    "https://sketchfab.com/models/9d84306752774b54af2018982ad20f2a/embed",
+    "https://sketchfab.com/models/b004fae3762c4376a215deb14dd3c30a/embed",
+    "https://sketchfab.com/models/1a166bec31a447f5995b3977c8c4f4e1/embed",
+    "https://sketchfab.com/models/40634043de27416594be40876f65a955/embed",
+    "https://sketchfab.com/models/034f40010b1341e5bc352fd97c5254d6/embed",
+    "https://sketchfab.com/models/b2b9704f7ed04116980c6db5cf4b9ec6/embed"
+  ],
+  labels:[
+    "Low Poly Forest",
+    "Owl",
+    "Elk",
+    "Armadillo",
+    "Forest Animals",
+    "Neem Tree",
+    "Sheesham",
+    "Bamboo",
+    "Rhododendron",
+    "Wax Seal",
+    "Horse Carriage",
+    "Areca Catechu",
+    "Forest Scene",
+    "Forest Floor",
+    "Pine Ground",
+    "Alveolar Sacs",
+    "Deer",
+    "Saplings"
+  ]
+},
+s7r:{
+  models:[
+    "https://sketchfab.com/models/5006409cead5474cabb9e25f07f38b44/embed",
+    "https://sketchfab.com/models/a8db3a50733b48f192175135e433d4a6/embed",
+    "https://sketchfab.com/models/79556fc5a339464cbe62d44acefebcf1/embed",
+    "https://sketchfab.com/models/a278d63585494921906ab3500c421ff7/embed"
+  ],
+  labels:[
+    "Glomerulus Anatomy",
+    "Bar",
+    "Clarifier",
+    "Sink"
+  ]
+},
+
+<!--for class 8-->
+
+s8a: {
+    models: [
+      "https://sketchfab.com/models/89c8ad3be6dc44e9be58c4a7ce840765/embed", // Plough
+      "https://sketchfab.com/models/0ded4620182e4545adce642516de753b/embed", // Low Poly Hoe
+      "https://sketchfab.com/models/d13ce5d1183b46e196b9a01e4fb9b634/embed", // Cultivator
+      "https://sketchfab.com/models/c584b86f4aff46f2a47b43c46be58552/embed", // Tractor with Seed Drill
+      "https://sketchfab.com/models/ae9a3db5075b41b097b7b66af0c5cf42/embed", // Seed Drill
+      "https://sketchfab.com/models/a7ec96ac6e2c4f31b6d0341724e4715c/embed", // Fertilizer
+      "https://sketchfab.com/models/2e51993e46ee4789864a782d29e7fe5e/embed", // Moat
+      "https://sketchfab.com/models/39750f36cde345d1ad32612fd74229ad/embed", // Dheki
+      "https://sketchfab.com/models/3512119ea1344c8abce3f2878d3d6939/embed", // Rahat Single
+      "https://sketchfab.com/models/bae218a0e2904f3db2176ed81881c451/embed", // Holland Combine Harvester
+      "https://sketchfab.com/models/720cdbe7c0314e16b7a5111d34f18c41/embed", // Winnow Machine
+      "https://sketchfab.com/models/55548949dd9d4d45a759e8589107552a/embed"  // Industrial Silo
+    ],
+    labels: [
+      "Plough",
+      "Low Poly Hoe",
+      "Cultivator",
+      "Tractor with Seed Drill",
+      "Seed Drill",
+      "Fertilizer",
+      "Moat",
+      "Dheki",
+      "Rahat Single",
+      "Holland Combine Harvester",
+      "Winnow Machine",
+      "Industrial Silo"
+    ]
+  },
+
+  s8b: {
+    models: [
+      "https://sketchfab.com/models/42439edc90cd4d87b8ae322a4dcee8de/embed", // Bacterial Cell
+      "https://sketchfab.com/models/e72efa3ca7ee498086b9ca8daef71723/embed", // Low Poly Exotic Plants
+      "https://sketchfab.com/models/c65601866ebd44f696eecccf37434e86/embed", // Gaoyuzhuang Formation
+      "https://sketchfab.com/models/469cf1de95e84ef3adbb628484c8ce60/embed", // Fungal Cell
+      "https://sketchfab.com/models/7b3e5ec494ac44629840dcfb7cb0fdf4/embed", // Penicillium / Penicillin
+      "https://sketchfab.com/models/b2329c65c63f402d98425a3c958f0aaf/embed", // HIV
+      "https://sketchfab.com/models/1603e3a49c334be2ab377f6494b458d0/embed", // Virus Rabia
+      "https://sketchfab.com/models/1e085616d0ff43c3bfd1f86cdbdb5755/embed", // Cyanobacteria
+      "https://sketchfab.com/models/93a9dc316a0c46c681b829f7b1b9fd03/embed"  // Mosquito
+    ],
+    labels: [
+      "Bacterial Cell",
+      "Low Poly Exotic Plants",
+      "Gaoyuzhuang Formation",
+      "Fungal Cell",
+      "Penicillium / Penicillin",
+      "HIV",
+      "Virus Rabia",
+      "Cyanobacteria",
+      "Mosquito"
+    ]
+  },
+
+  s8c: {
+    models: [
+      "https://sketchfab.com/models/e1bc63987b06402db23a75993ae632e4/embed", // Multimeter
+      "https://sketchfab.com/models/5b4b8e2407154430aa57136696f0c7e0/embed"  // Rust Material Test
+    ],
+    labels: [
+      "Multimeter",
+      "Rust Material Test"
+    ]
+  },
+
+  s8d: {
+    models: [
+      "https://sketchfab.com/models/c8d2447cc0ed4539aa13dc633596f387/embed", // Coal
+      "https://sketchfab.com/models/3d7cdaaa3412406598247f981fc051f2/embed", // Coal Tar
+      "https://sketchfab.com/models/acf6701bd4664c2a8a29237a82349135/embed"  // Oil Refinery Pack
+    ],
+    labels: [
+      "Coal",
+      "Coal Tar",
+      "Oil Refinery Pack"
+    ]
+  },
+
+  s8e: {
+    models: [
+      "https://sketchfab.com/models/ad9b8dd2248943b698256012d600833c/embed", // Magnesium
+      "https://sketchfab.com/models/fac4152157bc4d038f85b682f7850fec/embed", // Fire Blanket
+      "https://sketchfab.com/models/7b169d7b912447ed9ca1f0a15a1bc178/embed"  // Burning Cube
+    ],
+    labels: [
+      "Magnesium",
+      "Fire Blanket",
+      "Burning Cube"
+    ]
+  },
+
+  s8f: {
+    models: [
+      "https://sketchfab.com/models/9b3506d0af8b47bc866a6018f0409c3c/embed", // Wild Dog
+      "https://sketchfab.com/models/1efbdbfa24634fa1afdeed72361acc4b/embed", // Cheetah Spotted
+      "https://sketchfab.com/models/6a9f281a9fb344f3a7b8bcab3c6f4c9a/embed", // Grey Wolf
+      "https://sketchfab.com/models/5a36868106f843d4a24d87334f1550fe/embed", // Leopard
+      "https://sketchfab.com/models/6997814540f14929bf13cf3828b5dc90/embed", // Mango Trees
+      "https://sketchfab.com/models/26e54fa5c1d74edba61f5c5a97c95798/embed", // Elk
+      "https://sketchfab.com/models/67bbedd727a047869ef7c7b608445484/embed", // Tiger
+      "https://sketchfab.com/models/0a3069416678435e967735e05c71c3b1/embed"  // African Buffalo
+    ],
+    labels: [
+      "Wild Dog",
+      "Cheetah Spotted",
+      "Grey Wolf",
+      "Leopard",
+      "Mango Trees",
+      "Elk",
+      "Tiger",
+      "African Buffalo"
+    ]
+  },
+
+  s8g: {
+    models: [
+      "https://sketchfab.com/models/0c2ec0a278fc4ce6b5ad63a3aa0280ad/embed", // Robert Hooke
+      "https://sketchfab.com/models/27d735f1f6044eb8afa69dae8f428354/embed", // Brick Wall
+      "https://sketchfab.com/models/171a16a37c4347799e4838853fd84ffe/embed", // Amoeba
+      "https://sketchfab.com/models/0dfb131445d14016a3fd78d7cd76063b/embed", // Paramecium
+      "https://sketchfab.com/models/657f7b34ab2e43878c4f366e3e940ebd/embed", // Red Blood Cells
+      "https://sketchfab.com/models/dc5e60a4e5204545be2b11a41f571d5f/embed", // Spindle
+      "https://sketchfab.com/models/01d20ef702ee41478a8bc1da8082e504/embed", // Plant Cell
+      "https://sketchfab.com/models/1b9af229ad1d4a9f9883b1e12a5e9f83/embed"  // Animal Cell
+    ],
+    labels: [
+      "Robert Hooke",
+      "Brick Wall",
+      "Amoeba",
+      "Paramecium",
+      "Red Blood Cells",
+      "Spindle",
+      "Plant Cell",
+      "Animal Cell"
+    ]
+  },
+
+  s8h: {
+    models: [
+      "https://sketchfab.com/models/109c57bdbd0f4b3e92d09c9ecba979a2/embed", // Hens Eggs
+      "https://sketchfab.com/models/d9bb63a00d96454784a5f4b970c0a4dc/embed", // Fertilized Egg
+      "https://sketchfab.com/models/4e66b99729d2409a9b16d5b4845dca6a/embed", // Eggs with Chick
+      "https://sketchfab.com/models/6c6b4ce236f946bf91ea35c16f7f005d/embed", // Human Embryo
+      "https://sketchfab.com/models/ebfe7ef5c5a541b89a39b3503aeff929/embed", // Womb
+      "https://sketchfab.com/models/5a9c1632c29243dba7971b479b342bba/embed", // Human Female Anatomy
+      "https://sketchfab.com/models/967ef276db2547f9a8d0ee6d0e842431/embed"  // Human Male Anatomy
+    ],
+    labels: [
+      "Hens Eggs",
+      "Fertilized Egg",
+      "Eggs with Chick",
+      "Human Embryo",
+      "Womb",
+      "Human Female Anatomy",
+      "Human Male Anatomy"
+    ]
+  },
+
+  s8i: {
+    models: [
+      "https://sketchfab.com/models/63d3cc14e77c480b97e9b9c1d53f1b55/embed", // Compressing Spring
+      "https://sketchfab.com/models/3d4e4346827a49289c2af0ae400f6b84/embed", // Piston Pressure
+      "https://sketchfab.com/models/9df8a1ac3a2c4e3e8ef577a2decb06e6/embed", // Force and Pressure Apparatus
+      "https://sketchfab.com/models/fc59496c26db4c61b4640a2e4d0545a2/embed"  // Hydraulic Lift
+    ],
+    labels: [
+      "Compressing Spring",
+      "Piston Pressure",
+      "Force and Pressure Apparatus",
+      "Hydraulic Lift"
+    ]
+  },
+
+  s8j: {
+    models: [
+      "https://sketchfab.com/models/7f08fa06ce0d4c42a1d5c1c33a4f2a98/embed", // Light Reflection
+      "https://sketchfab.com/models/6076c14c86fa48a5970a7b4869da7c8e/embed", // Lens and Light Ray
+      "https://sketchfab.com/models/570ac7a06a9b49f0b15e30ae0c8cbd11/embed", // Prism
+      "https://sketchfab.com/models/63cf4b5e1f354b34a7f2b6b28e166e4e/embed"  // Rainbow
+    ],
+    labels: [
+      "Light Reflection",
+      "Lens and Light Ray",
+      "Prism",
+      "Rainbow"
+    ]
+  },
+
+  s8k: {
+    models: [
+      "https://sketchfab.com/models/38c04d682b214468aa1dd525f0aa034f/embed", // Battery
+      "https://sketchfab.com/models/0e64630ab2f14e3896a71f6d26e06a7c/embed", // Bulb
+      "https://sketchfab.com/models/d7b6e26a0dd04ac8a3d1b9a23e2061cd/embed", // Electric Circuit
+      "https://sketchfab.com/models/7db60cae4b0a4c479b9be1998c70aeea/embed"  // Switch
+    ],
+    labels: [
+      "Battery",
+      "Bulb",
+      "Electric Circuit",
+      "Switch"
+    ]
+  },
+
+  s8l: {
+    models: [
+      "https://sketchfab.com/models/f1177797ff5f4bdebac3bfb6a6ddc6e2/embed", // Electromagnet
+      "https://sketchfab.com/models/763f63c168af4f5291dd77f77a815b9f/embed", // Motor
+      "https://sketchfab.com/models/93799f165a1a4b79a95a2a5c72c36bfa/embed"  // Generator
+    ],
+    labels: [
+      "Electromagnet",
+      "Motor",
+      "Generator"
+    ]
+  },
+
+  s8m: {
+    models: [
+      "https://sketchfab.com/models/5e2d28a9ea214c6d8233dbe0ec7ac3a7/embed", // Solar Panel
+      "https://sketchfab.com/models/541e7c7d7e5947e3968b95df84f3a8ca/embed", // Wind Turbine
+      "https://sketchfab.com/models/1f7ed272b4044a29a29f3d6286cf40e6/embed"  // Hydro Power Plant
+    ],
+    labels: [
+      "Solar Panel",
+      "Wind Turbine",
+      "Hydro Power Plant"
+    ]
+  },
+
+  s8n: {
+    models: [
+      "https://sketchfab.com/models/9f2bcb6fdb1d4563b55ec98e6acddfbc/embed", // Lightning
+      "https://sketchfab.com/models/03e7636a4f8e4b4188a7b7989f63194e/embed", // Earthquake
+      "https://sketchfab.com/models/3a8a0a6c53dc4a6e88c14609f55a4f34/embed"  // Volcano
+    ],
+    labels: [
+      "Lightning",
+      "Earthquake",
+      "Volcano"
+    ]
+  },
+
+  s8o: {
+    models: [
+      "https://sketchfab.com/models/22984d5f0bca40a78309ef5a75eab276/embed", // Light Bulb
+      "https://sketchfab.com/models/73a44e9a2e784a6bb9e0e8f45354c9f9/embed"  // Optical Fiber
+    ],
+    labels: [
+      "Light Bulb",
+      "Optical Fiber"
+    ]
+  },
+  s8o: {
+    models: [
+      "https://sketchfab.com/models/22984d5f0bca40a78309ef5a75eab276/embed", // Light Bulb
+      "https://sketchfab.com/models/73a44e9a2e784a6bb9e0e8f45354c9f9/embed"  // Optical Fiber
+    ],
+    labels: [
+      "Light Bulb",
+      "Optical Fiber"
+    ]
+  },
+  s8p: {
+    models: [
+      "https://sketchfab.com/models/cfb156f03a7341b8a0a0ba0445ca742d/embed",
+      "https://sketchfab.com/models/226af19a53fc4cfeb623c7480857a7b6/embed",
+      "https://sketchfab.com/models/26cc0b7878bb4d919b68e2be399db466/embed",
+      "https://sketchfab.com/models/507448bcac4b43a49307822707fd9638/embed",
+      "https://sketchfab.com/models/27d295c90f3e453faa8dc0f8f1372e3a/embed",
+      "https://sketchfab.com/models/95baabcbc8634f6dace4376767a6024e/embed",
+      "https://sketchfab.com/models/a965996f64d84751ac2cfa4694c48b21/embed",
+      "https://sketchfab.com/models/002342e8d06042d69aed2919731d4d5f/embed",
+      "https://sketchfab.com/models/4e1caaa371fb486aa803400518bd1f12/embed",
+      "https://sketchfab.com/models/f0d1db71d38b4d669a4d5e0d8c6f1992/embed",
+      "https://sketchfab.com/models/41fc80d85dfd480281f21b74b2de2faa/embed",
+      "https://sketchfab.com/models/7f5f9e0b03fd464c8e3c7464232a072d/embed",
+      "https://sketchfab.com/models/b04d2c9a3b684ecdb390a449b3b8f27e/embed",
+      "https://sketchfab.com/models/8fb67d3defd74aaa880df3a08317e641/embed",
+      "https://sketchfab.com/models/998ae41e953f41b197e3d3421cb9f777/embed",
+      "https://sketchfab.com/models/4996b59f2f27446cb5dee77d8e8f80b5/embed"
+    ],
+    labels: [
+      "Night Sky Visible",
+      "Moon phases",
+      "Moon",
+      "Earth and Moon",
+      "Astronaut On The Moon",
+      "Grizzly Bear",
+      "Polar Star",
+      "Sirius",
+      "Solar System",
+      "Venus",
+      "Earth",
+      "Jupiter With Moons",
+      "Jupiter - Gas Giant",
+      "Saturn",
+      "Generated Comet",
+      "ISRO PSLV"
+    ]
+  },
+  s8q: {
+    models: [
+      "https://sketchfab.com/models/9f0343aff4814b758dc6e905aba5b5e0/embed",
+      "https://sketchfab.com/models/9fe25941b8154b1d8d7ebe81c942181a/embed",
+      "https://sketchfab.com/models/9fe25941b8154b1d8d7ebe81c942181a/embed",
+      "https://sketchfab.com/models/7b43e635cbfb47719d5a124302b78579/embed",
+      "https://sketchfab.com/models/8f41b49ba5344d3a8391a4c0d144d8e8/embed",
+      "https://sketchfab.com/models/b2b9704f7ed04116980c6db5cf4b9ec6/embed",
+      "https://sketchfab.com/models/c5fbdf0ace47481eb25646a9c13debb5/embed",
+      "https://sketchfab.com/models/ecd23ff01937450596dd6dafd85fb33b/embed"
+    ],
+    labels: [
+      "Asian Themed Low",
+      "Generic Factory with smoke towers",
+      "Generic Factory with smoke towers",
+      "Taj Mahal",
+      "Brisbane City",
+      "Plants Saplings",
+      "Ganges River Dolphin",
+      "Water Treatment Plant"
+    ]
+  },
+
+<!--  for class 9-->
+s9a: {
+  models: [
+    "https://sketchfab.com/models/246f79155c424e4ba22c9ae50532a81d/embed",
+    "https://sketchfab.com/models/358d838306f143329dd720434dec53c0/embed",
+    "https://sketchfab.com/models/7232356e010a427b885286964d9faaef/embed",
+    "https://sketchfab.com/models/4c113229252e44309d5de86613e0f357/embed"
+  ],
+  labels: [
+    "Salt dissolving in water",
+    "Liquid state of matter",
+    "Gas particles - matter",
+    "Ice Water"
+  ]
+},
+
+s9b: {
+  models: [
+    "https://sketchfab.com/models/09873b02a42f499fb7232fcee8ab830b/embed",
+    "https://sketchfab.com/models/98f727c22c96469fa834023e762e8941/embed",
+    "https://sketchfab.com/models/891ad685cd854ac48c85f763b9cdf1e9/embed",
+    "https://sketchfab.com/models/495a14904c6c4e0e9812bd5f5d74e53c/embed",
+    "https://sketchfab.com/models/da4e322688fb4bd1842edb8298643bcf/embed",
+    "https://sketchfab.com/models/a505cb88b1204d7b8e53054bd32d08e4/embed",
+    "https://sketchfab.com/models/4bf3412277c74b4dbb193477d8d5b9c0/embed"
+  ],
+  labels: [
+    "Consumable items",
+    "Skid Filtration System",
+    "Copper Sulphate Crystal",
+    "Phase transition - Evaporation",
+    "Distillation Column",
+    "Earth’s atmosphere",
+    "Air conditioner"
+  ]
+},
+
+s9c: {
+  models: [
+    "https://sketchfab.com/models/ce3fdd3279584c2eaf416894dd36a81e/embed",
+    "https://sketchfab.com/models/73e292f32ffe4ca490e166faeba317e7/embed",
+    "https://sketchfab.com/models/48e8bb1cbfa446f383ef64bcebaab5e6/embed"
+  ],
+  labels: [
+    "Chemical Test Tubes",
+    "Silicon Crystal Lattice",
+    "Watermelon (representation)"
+  ]
+},
+
+s9d: {
+  models: [
+    "https://sketchfab.com/models/08f6b42cd4e840afa8a951f8ccedd054/embed",
+    "https://sketchfab.com/models/1d83e005cc974ef9a6a3b88029611abe/embed",
+    "https://sketchfab.com/models/2834cf373be440a0acc2ad07d8d8bdab/embed",
+    "https://sketchfab.com/models/329e3e423749420db86334947999061f/embed"
+  ],
+  labels: [
+    "Thomson's Plum Pudding Atomic Model",
+    "Rutherford's Scattering Experiment",
+    "Bohr Electron Energy Level",
+    "Atomic Structure"
+  ]
+},
+s9e: {
+  models: [
+    "https://sketchfab.com/models/8bb65a9721e748c9864f37150527a8d9/embed",
+    "https://sketchfab.com/models/bbc795a5ea5441529223b3a1002991bb/embed",
+    "https://sketchfab.com/models/60ef7d2515b0403986ff9e8b7f234a66/embed",
+    "https://sketchfab.com/models/9db95b53121e40ada34b360fd4a1f841/embed",
+    "https://sketchfab.com/models/0b15c013059844d7a26c1f16752f8b61/embed"
+  ],
+  labels: [
+    "Compound Microscope",
+    "Red Onion Cell",
+    "Human Cell",
+    "Prokaryotic Cell",
+    "Animal Cell"
+  ]
+},
+
+s9f: {
+  models: [
+    "https://sketchfab.com/models/36cb66549bd249749ffadc700e3e4b24/embed",
+    "https://sketchfab.com/models/6c7b5125d02d4b19b1ba5b58821afdb1/embed",
+    "https://sketchfab.com/models/1b919b35940346ea9e25ad39b579c049/embed",
+    "https://sketchfab.com/3d-models/ash-wood-axial-parenchyma-near-a-vessel-9ae9ee1f916948eb9367b981392ca46d/embed",
+    "https://sketchfab.com/models/74ac69d9fba44d64a47f7213aaa31d61/embed",
+    "https://sketchfab.com/models/a8e93a28252c4717b50ff068a79f7c87/embed",
+    "https://sketchfab.com/models/dcdf090f6bde44719d8ee82dcaca2d49/embed",
+    "https://sketchfab.com/models/b86266b76c874de58d59bf3572815541/embed"
+  ],
+  labels: [
+    "Onion Cell",
+    "Meristem Cell Group",
+    "Hydrophilia Aquarium Stem Plant",
+    "Axial Parenchyma",
+    "Collenchyma Structure",
+    "Xylem and Phloem",
+    "Phloem Xylem",
+    "Location of Muscle Fibres"
+  ]
+},
+
+s9g: {
+  models: [
+    "https://sketchfab.com/models/19cdcdb0dfbe4b959cdd0388675874f1/embed",
+    "https://sketchfab.com/models/86be60f0298c4c17bb61db212de1c4e1/embed",
+    "https://sketchfab.com/models/0dfb131445d14016a3fd78d7cd76063b/embed",
+    "https://sketchfab.com/models/171a16a37c4347799e4838853fd84ffe/embed",
+    "https://sketchfab.com/models/17b2a7d702834a759c42f4927109d74a/embed",
+    "https://sketchfab.com/models/a151cca823ab4fffa8d91a458156976f/embed",
+    "https://sketchfab.com/models/7b3e5ec494ac44629840dcfb7cb0fdf4/embed",
+    "https://sketchfab.com/models/62fc5869fd124b1ab3e59aae756bcbc0/embed",
+    "https://sketchfab.com/models/6767c23a2563402e84565847a92aa43e/embed",
+    "https://sketchfab.com/models/564557cff6ff4e69a6b52b6516ae4773/embed"
+  ],
+  labels: [
+    "Bacteria",
+    "Corona Virus",
+    "Paramecium",
+    "Amoeba",
+    "Euglena",
+    "Yeast Cell Environment",
+    "Penicillium",
+    "Agaricus ostreatus",
+    "Algae",
+    "Ulva"
+  ]
+},
+s9h: {
+  models: [
+    "https://sketchfab.com/models/1f1fb223f4044b03aa9938ca886548b4/embed",
+    "https://sketchfab.com/models/0e923dbba2f24a7c84d8ed824fb6e8d2/embed",
+    "https://sketchfab.com/models/570349406dae41e3b048ffd1e4e81daf/embed",
+    "https://sketchfab.com/models/f440280792f34d4cad97ca8bca8194fc/embed",
+    "https://sketchfab.com/models/ee7728aa78584fb5bd3bd1433d5572e9/embed",
+    "https://sketchfab.com/models/39a6f02f8c12405ab3ca92772c784d1f/embed",
+    "https://sketchfab.com/models/61f082e2e26644518f9c65f6e3ee24b6/embed",
+    "https://sketchfab.com/models/d2a3bb3a3f424a248196ea08a716e0c3/embed",
+    "https://sketchfab.com/models/e6d37812f0cb4df69906cec02f1d3995/embed"
+  ],
+  labels: [
+    "Fragmentation in Spirogyra",
+    "Liverwort (Marchantia sp.)",
+    "Marsilea quadrifolia",
+    "Low Poly Fern",
+    "Monocot Root",
+    "Dicot Leaf",
+    "Coral Reef - Réunion Island",
+    "Fuschia Flatworm",
+    "Balanoglossus"
+  ]
+},
+
+s9i: {
+  models: [],
+  labels: []
+},
+
+s9j: {
+  models: [
+    "https://sketchfab.com/models/b062523bf01d4ffaa99a30a4316531a5/embed",
+    "https://sketchfab.com/models/a9d3712be1364e029142cfac065494d8/embed"
+  ],
+  labels: [
+    "Jumping Down (force illustration)",
+    "Inclined Plane"
+  ]
+},
+
+s9k: {
+  models: [
+    "https://sketchfab.com/models/a8ee96d415dc409c9ea43ff01167f442/embed",
+    "https://sketchfab.com/models/2fcaa9c1452248b4bcf186b003b5476f/embed"
+  ],
+  labels: [
+    "Gravitation Wall Posters",
+    "Metal Sinks (gravity illustration)"
+  ]
+},
+
+s9l: {
+  models: [
+    "https://sketchfab.com/models/1ce33880149543f9ae7b5848e6e52d66/embed"
+  ],
+  labels: [
+    "Bow and Arrow (work and energy)"
+  ]
+},
+
+s9m: {
+  models: [
+    "https://sketchfab.com/models/edb0c882e9274b54b51b193b476af224/embed",
+    "https://sketchfab.com/models/937d1ec821334fda8d73510bebdd3d5d/embed",
+    "https://sketchfab.com/models/84faf36f75bf455288dad40e3c1a7c53/embed",
+    "https://sketchfab.com/models/ca6efe800b3c4407a201d413addbf909/embed",
+    "https://sketchfab.com/models/3bef1be839834f4f9ad7ff8731d90602/embed",
+    "https://sketchfab.com/models/f80bda64666c4b8aaac8f63b7b82a0a0/embed"
+  ],
+  labels: [
+    "Tuning Fork",
+    "Longitudinal Waves",
+    "Megaphone",
+    "French Horn",
+    "Doctor's Stethoscope",
+    "Anatomy of the Inner Ear"
+  ]
+},
+
+s9n: {
+  models: [
+    "https://sketchfab.com/models/b2355a7351f14c4684da657f42fddda1/embed",
+    "https://sketchfab.com/models/095d0db6bd564a539bfc0e2e4e903738/embed"
+  ],
+  labels: [
+    "Staphylococcus aureus",
+    "Trypanosoma"
+  ]
+},
+
+s9o: {
+  models: [
+    "https://sketchfab.com/models/ee6837789142475eac6461a7ac4b973e/embed",
+    "https://sketchfab.com/models/9474d18e852a457291841b79ac806e98/embed",
+    "https://sketchfab.com/models/35da9d322cbe406bbf7faf38307a20c2/embed",
+    "https://sketchfab.com/models/a3fcfc5406364ed1890ac8f3e885ee14/embed"
+  ],
+  labels: [
+    "Ocean Currents",
+    "Mushroom and Lichen",
+    "Water Cycle",
+    "Carbon Cycle"
+  ]
+},
+
+s9p: {
+  models: [
+    "https://sketchfab.com/models/637198c4b8be41e6aeaca8cea8fb81f4/embed",
+    "https://sketchfab.com/models/2be03e1c44b146b0b1f6076968d5f3fe/embed",
+    "https://sketchfab.com/models/3bab34baa9ea4097ba18e39af598768a/embed",
+    "https://sketchfab.com/models/fbeca11a9b524df0b43f341d4152cc69/embed",
+    "https://sketchfab.com/models/f93c039f7b0a47059b27a8840b707904/embed",
+    "https://sketchfab.com/models/e5ff54420ba1459ead0a995c836b908e/embed"
+  ],
+  labels: [
+    "Crops (low poly)",
+    "Indian Cow",
+    "Foghorn Leghorn (Hen)",
+    "Macrobrachium Rosenbergii",
+    "Prawn",
+    "Beehive"
+  ]
+}
     };
 
-    const unitData = units[currentUnit] || units["unit1"];
+    const unitData = units[currentUnit] || units["unique"];
 
     let currentModelIndex = 0;
     let optionsVisible = false;
