@@ -149,7 +149,7 @@ import io.github.graspit.R;
 public class ArMain extends Activity {
 
     String[] classNames = {
-        "Tutorials","Class 6","Class 7","Class 8","Class 9","Class 10","Class 11","Class 12"
+        "Class 6","Class 7","Class 8","Class 9","Class 10","Class 11","Class 12"
     };
     int[] boxBackgrounds = {
         R.drawable.border_pink, R.drawable.bc1, R.drawable.bc2,
@@ -218,20 +218,7 @@ public class ArMain extends Activity {
     }
 
     private void handleClassSelection(String className) {
-        if ("Tutorials".equals(className)) {
-            setContentView(R.layout.you);
 
-            YouTubePlayerView youTubePlayerView = findViewById(R.id.youtube_player_view);
-            String videoId = extractYoutubeId("https://youtu.be/URUJD5NEXC8?si=YUPTXe_a9fQ-x5rz");
-            YouTubePlayerHelper.loadVideo(this, youTubePlayerView, videoId);
-
-            ImageButton fullscreenButton = findViewById(R.id.fullscreen_button);
-            fullscreenButton.setOnClickListener(v -> toggleFullScreen());
-
-            ImageButton backBtn = findViewById(R.id.back_button);
-            backBtn.setOnClickListener(v -> recreate());
-
-        } else {
             int classNum = extractClassNumber(className);
             Intent intent;
 
@@ -246,7 +233,6 @@ public class ArMain extends Activity {
             }
             intent.putExtra(ArSubjects.EXTRA_CLASS_NUMBER, classNum);
             startActivity(intent);
-        }
     }
 
     private int extractClassNumber(String className) {
